@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: skeleton
   m_EditorClassIdentifier: 
   EnemyName: "\uD574\uACE8\uBCD1\uC0AC"
-  MaxHP: 165
-  MaxAttack: 23
-  MinAttack: 18
+  MaxHP: 17
+  MinAttack: 14
+  MaxAttack: 18
   Defense: 5
   RewardGold: 0
   Prefab: {fileID: 0}

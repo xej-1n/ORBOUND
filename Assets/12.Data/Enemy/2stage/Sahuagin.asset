@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Sahuagin
   m_EditorClassIdentifier: 
   EnemyName: "\uC2EC\uD574\uD3EC\uC2DD\uC790"
-  MaxHP: 115
-  MaxAttack: 23
-  MinAttack: 18
-  Defense: 1
+  MaxHP: 100
+  MinAttack: 13
+  MaxAttack: 17
+  Defense: 2
   RewardGold: 0
   Prefab: {fileID: 0}

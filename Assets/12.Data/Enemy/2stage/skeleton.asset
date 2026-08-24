@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyName: "\uC2A4\uCF08\uB808\uD1A4"
   MaxHP: 90
-  MaxAttack: 20
-  MinAttack: 16
-  Defense: 3
+  MinAttack: 10
+  MaxAttack: 14
+  Defense: 4
   RewardGold: 0
   Prefab: {fileID: 0}

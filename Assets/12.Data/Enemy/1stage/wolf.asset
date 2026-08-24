@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: wolf
   m_EditorClassIdentifier: 
   EnemyName: "\uB291\uB300"
-  MaxHP: 70
-  MaxAttack: 15
-  MinAttack: 11
+  MaxHP: 60
+  MinAttack: 9
+  MaxAttack: 12
   Defense: 0
   RewardGold: 0
   Prefab: {fileID: 0}

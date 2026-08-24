@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: mushroom
   m_EditorClassIdentifier: 
   EnemyName: "\uBC84\uC12F\uBAAC\uC2A4\uD130"
-  MaxHP: 140
-  MaxAttack: 21
-  MinAttack: 17
+  MaxHP: 120
+  MinAttack: 12
+  MaxAttack: 16
   Defense: 2
   RewardGold: 0
   Prefab: {fileID: 0}

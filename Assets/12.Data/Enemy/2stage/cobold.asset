@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: cobold
   m_EditorClassIdentifier: 
   EnemyName: "\uCF54\uBCFC\uD2B8"
-  MaxHP: 85
+  MaxHP: 80
+  MinAttack: 11
   MaxAttack: 15
-  MinAttack: 19
-  Defense: 2
+  Defense: 1
   RewardGold: 2
   Prefab: {fileID: 0}

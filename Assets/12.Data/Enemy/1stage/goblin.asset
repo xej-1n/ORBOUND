@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: goblin
   m_EditorClassIdentifier: 
   EnemyName: "\uACE0\uBE14\uB9B0"
-  MaxHP: 65
-  MaxAttack: 10
-  MinAttack: 13
+  MaxHP: 35
+  MinAttack: 7
+  MaxAttack: 9
   Defense: 1
   RewardGold: 0
   Prefab: {fileID: 0}

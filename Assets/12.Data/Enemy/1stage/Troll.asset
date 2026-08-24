@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Troll
   m_EditorClassIdentifier: 
   EnemyName: "\uD2B8\uB864"
-  MaxHP: 350
-  MaxAttack: 25
-  MinAttack: 32
-  Defense: 3
+  MaxHP: 280
+  MinAttack: 15
+  MaxAttack: 20
+  Defense: 4
   RewardGold: 0
   Prefab: {fileID: 0}

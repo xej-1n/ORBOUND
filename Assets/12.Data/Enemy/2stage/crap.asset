@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: crap
   m_EditorClassIdentifier: 
   EnemyName: "\uAC8C"
-  MaxHP: 95
-  MaxAttack: 17
-  MinAttack: 13
+  MaxHP: 80
+  MinAttack: 10
+  MaxAttack: 13
   Defense: 3
-  RewardGold: 3
+  RewardGold: 0
   Prefab: {fileID: 0}

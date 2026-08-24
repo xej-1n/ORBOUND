@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: slime
   m_EditorClassIdentifier: 
   EnemyName: "\uC2AC\uB77C\uC784"
-  MaxHP: 55
-  MaxAttack: 11
-  MinAttack: 8
+  MaxHP: 35
+  MinAttack: 5
+  MaxAttack: 7
   Defense: 0
   RewardGold: 0
   Prefab: {fileID: 0}

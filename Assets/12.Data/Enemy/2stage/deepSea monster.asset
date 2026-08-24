@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: deepSea monster
   m_EditorClassIdentifier: 
   EnemyName: "\uC2EC\uD574\uAD34\uBB3C"
-  MaxHP: 600
-  MaxAttack: 28
-  MinAttack: 35
-  Defense: 1
-  RewardGold: 4
+  MaxHP: 450
+  MinAttack: 20
+  MaxAttack: 27
+  Defense: 5
+  RewardGold: 0
   Prefab: {fileID: 0}

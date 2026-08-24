@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: werewolf captain
   m_EditorClassIdentifier: 
   EnemyName: "\uB291\uB300\uC778\uAC04 \uB300\uC7A5"
-  MaxHP: 850
-  MaxAttack: 40
-  MinAttack: 32
+  MaxHP: 700
+  MinAttack: 25
+  MaxAttack: 32
   Defense: 6
   RewardGold: 0
   Prefab: {fileID: 0}

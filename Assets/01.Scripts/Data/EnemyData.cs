@@ -5,9 +5,11 @@ public class EnemyData : ScriptableObject
 {
     public string EnemyName;
     public int MaxHP;
-    public int MaxAttack;
+    [Header("계수")]
     public int MinAttack;
+    public int MaxAttack;
     public int Defense;
+    [Header("그외")]
     public int RewardGold;
     public GameObject Prefab;
 }
