@@ -1,0 +1,1391 @@
+fileFormatVersion: 2
+guid: 30072e1a67eed0d439a8b80b17a8e27a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5726233042124804793
+    second: German Shepherd Maxres_0
+  - first:
+      213: -7465835492525866411
+    second: German Shepherd Maxres_1
+  - first:
+      213: -7729727327195251305
+    second: German Shepherd Maxres_2
+  - first:
+      213: -837295224619131543
+    second: German Shepherd Maxres_3
+  - first:
+      213: 5333330437157513849
+    second: German Shepherd Maxres_4
+  - first:
+      213: -666349256262310482
+    second: German Shepherd Maxres_5
+  - first:
+      213: 4306554110900757500
+    second: German Shepherd Maxres_6
+  - first:
+      213: 5793351595958046038
+    second: German Shepherd Maxres_7
+  - first:
+      213: 6829494223146144155
+    second: German Shepherd Maxres_8
+  - first:
+      213: -6712068280758230718
+    second: German Shepherd Maxres_9
+  - first:
+      213: 3658468495390671359
+    second: German Shepherd Maxres_10
+  - first:
+      213: -6945320584449174616
+    second: German Shepherd Maxres_11
+  - first:
+      213: 833847988338955669
+    second: German Shepherd Maxres_12
+  - first:
+      213: -96537382843730657
+    second: German Shepherd Maxres_13
+  - first:
+      213: -4875394357535930933
+    second: German Shepherd Maxres_14
+  - first:
+      213: -4173094488460255078
+    second: German Shepherd Maxres_15
+  - first:
+      213: 1300033784942574257
+    second: German Shepherd Maxres_16
+  - first:
+      213: -4881699884532040536
+    second: German Shepherd Maxres_17
+  - first:
+      213: 3085869804179607565
+    second: German Shepherd Maxres_18
+  - first:
+      213: 3902803347092848162
+    second: German Shepherd Maxres_19
+  - first:
+      213: 8462049955988458616
+    second: German Shepherd Maxres_20
+  - first:
+      213: 2027436221925631494
+    second: German Shepherd Maxres_21
+  - first:
+      213: 6424111424072124891
+    second: German Shepherd Maxres_22
+  - first:
+      213: -4959992748490769032
+    second: German Shepherd Maxres_23
+  - first:
+      213: -261501854593899542
+    second: German Shepherd Maxres_24
+  - first:
+      213: 2151708360172535399
+    second: German Shepherd Maxres_25
+  - first:
+      213: 8660529892197310732
+    second: German Shepherd Maxres_26
+  - first:
+      213: 3812634005652087826
+    second: German Shepherd Maxres_27
+  - first:
+      213: 6270121377982025483
+    second: German Shepherd Maxres_28
+  - first:
+      213: -1748385370912751030
+    second: German Shepherd Maxres_29
+  - first:
+      213: 510588505123882244
+    second: German Shepherd Maxres_30
+  - first:
+      213: 7223167972610038141
+    second: German Shepherd Maxres_31
+  - first:
+      213: 8802956782161190961
+    second: German Shepherd Maxres_32
+  - first:
+      213: 5062968393957902996
+    second: German Shepherd Maxres_33
+  - first:
+      213: 8406807193669671609
+    second: German Shepherd Maxres_34
+  - first:
+      213: -6586009864083843143
+    second: German Shepherd Maxres_35
+  - first:
+      213: -6319014411390337203
+    second: German Shepherd Maxres_36
+  - first:
+      213: -8344967111479337888
+    second: German Shepherd Maxres_37
+  - first:
+      213: 7929422954379305453
+    second: German Shepherd Maxres_38
+  - first:
+      213: 1015149576303599766
+    second: German Shepherd Maxres_39
+  - first:
+      213: 7751642080671909100
+    second: German Shepherd Maxres_40
+  - first:
+      213: -675924353568905300
+    second: German Shepherd Maxres_41
+  - first:
+      213: 3234961065948986977
+    second: German Shepherd Maxres_42
+  - first:
+      213: -3597470920808719958
+    second: German Shepherd Maxres_43
+  - first:
+      213: 4003551683228822580
+    second: German Shepherd Maxres_44
+  - first:
+      213: -1961170377566109930
+    second: German Shepherd Maxres_45
+  - first:
+      213: -8205013549223333684
+    second: German Shepherd Maxres_46
+  - first:
+      213: -3853686689027659308
+    second: German Shepherd Maxres_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: German Shepherd Maxres_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 4229
+        width: 154
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74deb0713655880b0800000000000000
+      internalID: -5726233042124804793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_1
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 4229
+        width: 154
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5520e7cdc26046890800000000000000
+      internalID: -7465835492525866411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_2
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 4230
+        width: 154
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79db5e323fd7ab490800000000000000
+      internalID: -7729727327195251305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_3
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 4204
+        width: 153
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d127ced645164f0800000000000000
+      internalID: -837295224619131543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_4
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 4229
+        width: 154
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a6d8086cbc30a40800000000000000
+      internalID: 5333330437157513849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_5
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 4204
+        width: 154
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5a324c1e6a0c6f0800000000000000
+      internalID: -666349256262310482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_6
+      rect:
+        serializedVersion: 2
+        x: 3808
+        y: 4201
+        width: 185
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3ec329524f3cb30800000000000000
+      internalID: 4306554110900757500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_7
+      rect:
+        serializedVersion: 2
+        x: 4414
+        y: 4293
+        width: 176
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d8500059e166050800000000000000
+      internalID: 5793351595958046038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_8
+      rect:
+        serializedVersion: 2
+        x: 5008
+        y: 4201
+        width: 185
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91553ecfcc37ce50800000000000000
+      internalID: 6829494223146144155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_9
+      rect:
+        serializedVersion: 2
+        x: 5597
+        y: 4232
+        width: 210
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2412d31f571f9d2a0800000000000000
+      internalID: -6712068280758230718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_10
+      rect:
+        serializedVersion: 2
+        x: 6199
+        y: 4223
+        width: 214
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff108b196bd75c230800000000000000
+      internalID: 3658468495390671359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_11
+      rect:
+        serializedVersion: 2
+        x: 6797
+        y: 4232
+        width: 210
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3d2b0f9b34d9f90800000000000000
+      internalID: -6945320584449174616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_12
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 3627
+        width: 459
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5951e95d35c629b00800000000000000
+      internalID: 833847988338955669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_13
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 3627
+        width: 468
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15bd0403c709aef0800000000000000
+      internalID: -96537382843730657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_14
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 3627
+        width: 472
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5802ba9ae175cb0800000000000000
+      internalID: -4875394357535930933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_15
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 3630
+        width: 438
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90af293ca03616c0800000000000000
+      internalID: -4173094488460255078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_16
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 3627
+        width: 465
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba328be6d5aa0210800000000000000
+      internalID: 1300033784942574257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_17
+      rect:
+        serializedVersion: 2
+        x: 3086
+        y: 3630
+        width: 484
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acf662c1d7b04cb0800000000000000
+      internalID: -4881699884532040536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_18
+      rect:
+        serializedVersion: 2
+        x: 3656
+        y: 3664
+        width: 515
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00da3dbc3633da20800000000000000
+      internalID: 3085869804179607565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_19
+      rect:
+        serializedVersion: 2
+        x: 4303
+        y: 3638
+        width: 403
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ebcab57fa892630800000000000000
+      internalID: 3902803347092848162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_20
+      rect:
+        serializedVersion: 2
+        x: 4856
+        y: 3664
+        width: 529
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c4d42e99d3f6570800000000000000
+      internalID: 8462049955988458616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_21
+      rect:
+        serializedVersion: 2
+        x: 5419
+        y: 3628
+        width: 489
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60623a48086e22c10800000000000000
+      internalID: 2027436221925631494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_22
+      rect:
+        serializedVersion: 2
+        x: 6093
+        y: 3625
+        width: 454
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd90955cd47072950800000000000000
+      internalID: 6424111424072124891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_23
+      rect:
+        serializedVersion: 2
+        x: 6619
+        y: 3628
+        width: 489
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87db1b9dfd09a2bb0800000000000000
+      internalID: -4959992748490769032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_24
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 3027
+        width: 458
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae323d0e275fe5cf0800000000000000
+      internalID: -261501854593899542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3027
+        width: 468
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e72547a576cdd10800000000000000
+      internalID: 2151708360172535399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_26
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 3027
+        width: 472
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01a21f2d02603870800000000000000
+      internalID: 8660529892197310732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_27
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 3030
+        width: 438
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214a77d8d6239e430800000000000000
+      internalID: 3812634005652087826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_28
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 3027
+        width: 465
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f83393c22f30750800000000000000
+      internalID: 6270121377982025483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_29
+      rect:
+        serializedVersion: 2
+        x: 3031
+        y: 3030
+        width: 483
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42814cb4cc7cb7e0800000000000000
+      internalID: -1748385370912751030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_30
+      rect:
+        serializedVersion: 2
+        x: 3630
+        y: 3064
+        width: 516
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4058e4a4a89f51700800000000000000
+      internalID: 510588505123882244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_31
+      rect:
+        serializedVersion: 2
+        x: 4294
+        y: 3038
+        width: 403
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7956684009dd3460800000000000000
+      internalID: 7223167972610038141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_32
+      rect:
+        serializedVersion: 2
+        x: 4815
+        y: 3064
+        width: 531
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13065d5ad826a2a70800000000000000
+      internalID: 8802956782161190961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_33
+      rect:
+        serializedVersion: 2
+        x: 5493
+        y: 3028
+        width: 488
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a04e6fde6434640800000000000000
+      internalID: 5062968393957902996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_34
+      rect:
+        serializedVersion: 2
+        x: 6052
+        y: 3025
+        width: 455
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba11e9f99afaa470800000000000000
+      internalID: 8406807193669671609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_35
+      rect:
+        serializedVersion: 2
+        x: 6693
+        y: 3028
+        width: 488
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7501c3ceac994a0800000000000000
+      internalID: -6586009864083843143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_36
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 2440
+        width: 155
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f31865fd95e48a0800000000000000
+      internalID: -6319014411390337203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_37
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 2434
+        width: 154
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cd4f920a8b03c80800000000000000
+      internalID: -8344967111479337888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_38
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 2437
+        width: 155
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de16b954a28fa0e60800000000000000
+      internalID: 7929422954379305453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_39
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 2413
+        width: 147
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690e6714929861e00800000000000000
+      internalID: 1015149576303599766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_40
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 2435
+        width: 156
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce44b64076d539b60800000000000000
+      internalID: 7751642080671909100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_41
+      rect:
+        serializedVersion: 2
+        x: 3230
+        y: 2409
+        width: 148
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca76d72b162ae96f0800000000000000
+      internalID: -675924353568905300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_42
+      rect:
+        serializedVersion: 2
+        x: 3812
+        y: 2414
+        width: 188
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ebb1e23f3e4ec20800000000000000
+      internalID: 3234961065948986977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_43
+      rect:
+        serializedVersion: 2
+        x: 4422
+        y: 2435
+        width: 155
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9166bf147331ec0800000000000000
+      internalID: -3597470920808719958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_44
+      rect:
+        serializedVersion: 2
+        x: 5012
+        y: 2414
+        width: 188
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c65ce4b097f8730800000000000000
+      internalID: 4003551683228822580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_45
+      rect:
+        serializedVersion: 2
+        x: 5612
+        y: 2414
+        width: 188
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f372daee588c4e0800000000000000
+      internalID: -1961170377566109930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_46
+      rect:
+        serializedVersion: 2
+        x: 6223
+        y: 2435
+        width: 154
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0b64526afe12e80800000000000000
+      internalID: -8205013549223333684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: German Shepherd Maxres_47
+      rect:
+        serializedVersion: 2
+        x: 6812
+        y: 2414
+        width: 188
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9ead0cf54f48ac0800000000000000
+      internalID: -3853686689027659308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      German Shepherd Maxres_0: -5726233042124804793
+      German Shepherd Maxres_1: -7465835492525866411
+      German Shepherd Maxres_10: 3658468495390671359
+      German Shepherd Maxres_11: -6945320584449174616
+      German Shepherd Maxres_12: 833847988338955669
+      German Shepherd Maxres_13: -96537382843730657
+      German Shepherd Maxres_14: -4875394357535930933
+      German Shepherd Maxres_15: -4173094488460255078
+      German Shepherd Maxres_16: 1300033784942574257
+      German Shepherd Maxres_17: -4881699884532040536
+      German Shepherd Maxres_18: 3085869804179607565
+      German Shepherd Maxres_19: 3902803347092848162
+      German Shepherd Maxres_2: -7729727327195251305
+      German Shepherd Maxres_20: 8462049955988458616
+      German Shepherd Maxres_21: 2027436221925631494
+      German Shepherd Maxres_22: 6424111424072124891
+      German Shepherd Maxres_23: -4959992748490769032
+      German Shepherd Maxres_24: -261501854593899542
+      German Shepherd Maxres_25: 2151708360172535399
+      German Shepherd Maxres_26: 8660529892197310732
+      German Shepherd Maxres_27: 3812634005652087826
+      German Shepherd Maxres_28: 6270121377982025483
+      German Shepherd Maxres_29: -1748385370912751030
+      German Shepherd Maxres_3: -837295224619131543
+      German Shepherd Maxres_30: 510588505123882244
+      German Shepherd Maxres_31: 7223167972610038141
+      German Shepherd Maxres_32: 8802956782161190961
+      German Shepherd Maxres_33: 5062968393957902996
+      German Shepherd Maxres_34: 8406807193669671609
+      German Shepherd Maxres_35: -6586009864083843143
+      German Shepherd Maxres_36: -6319014411390337203
+      German Shepherd Maxres_37: -8344967111479337888
+      German Shepherd Maxres_38: 7929422954379305453
+      German Shepherd Maxres_39: 1015149576303599766
+      German Shepherd Maxres_4: 5333330437157513849
+      German Shepherd Maxres_40: 7751642080671909100
+      German Shepherd Maxres_41: -675924353568905300
+      German Shepherd Maxres_42: 3234961065948986977
+      German Shepherd Maxres_43: -3597470920808719958
+      German Shepherd Maxres_44: 4003551683228822580
+      German Shepherd Maxres_45: -1961170377566109930
+      German Shepherd Maxres_46: -8205013549223333684
+      German Shepherd Maxres_47: -3853686689027659308
+      German Shepherd Maxres_5: -666349256262310482
+      German Shepherd Maxres_6: 4306554110900757500
+      German Shepherd Maxres_7: 5793351595958046038
+      German Shepherd Maxres_8: 6829494223146144155
+      German Shepherd Maxres_9: -6712068280758230718
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
