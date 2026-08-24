@@ -1,0 +1,1573 @@
+fileFormatVersion: 2
+guid: f674118ca5c6bbf4cbea6ee95cd1b2e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -210573908847124046
+    second: german shepherd bigger  battler_0
+  - first:
+      213: 7593901244591331134
+    second: german shepherd bigger  battler_1
+  - first:
+      213: -4407478878666405907
+    second: german shepherd bigger  battler_2
+  - first:
+      213: -8414319573019282427
+    second: german shepherd bigger  battler_3
+  - first:
+      213: -3983112944602438365
+    second: german shepherd bigger  battler_4
+  - first:
+      213: 1538311936463416211
+    second: german shepherd bigger  battler_5
+  - first:
+      213: -3789627410781153225
+    second: german shepherd bigger  battler_6
+  - first:
+      213: 4379165138340555300
+    second: german shepherd bigger  battler_7
+  - first:
+      213: -1588255874962392882
+    second: german shepherd bigger  battler_8
+  - first:
+      213: -2957779592190555832
+    second: german shepherd bigger  battler_9
+  - first:
+      213: -6839898794183968577
+    second: german shepherd bigger  battler_10
+  - first:
+      213: -32704967222797102
+    second: german shepherd bigger  battler_11
+  - first:
+      213: 9192113966400935185
+    second: german shepherd bigger  battler_12
+  - first:
+      213: -505109332832562727
+    second: german shepherd bigger  battler_13
+  - first:
+      213: -2347309740447151922
+    second: german shepherd bigger  battler_14
+  - first:
+      213: -796973577777425767
+    second: german shepherd bigger  battler_15
+  - first:
+      213: -6774309325623206017
+    second: german shepherd bigger  battler_16
+  - first:
+      213: -541321975078903327
+    second: german shepherd bigger  battler_17
+  - first:
+      213: 238353962933714950
+    second: german shepherd bigger  battler_18
+  - first:
+      213: -2999416594210335775
+    second: german shepherd bigger  battler_19
+  - first:
+      213: -2612570909412772880
+    second: german shepherd bigger  battler_20
+  - first:
+      213: 2051794866669599113
+    second: german shepherd bigger  battler_21
+  - first:
+      213: 3387495776812442379
+    second: german shepherd bigger  battler_22
+  - first:
+      213: 7051891975743119755
+    second: german shepherd bigger  battler_23
+  - first:
+      213: -6210536089571893655
+    second: german shepherd bigger  battler_24
+  - first:
+      213: -2823744593779682794
+    second: german shepherd bigger  battler_25
+  - first:
+      213: -6537080360647651497
+    second: german shepherd bigger  battler_26
+  - first:
+      213: 8832722645679060227
+    second: german shepherd bigger  battler_27
+  - first:
+      213: 1183637060634108075
+    second: german shepherd bigger  battler_28
+  - first:
+      213: -4031851482417194547
+    second: german shepherd bigger  battler_29
+  - first:
+      213: -885597744915510586
+    second: german shepherd bigger  battler_30
+  - first:
+      213: 9139432369500699596
+    second: german shepherd bigger  battler_31
+  - first:
+      213: 5827566701399559398
+    second: german shepherd bigger  battler_32
+  - first:
+      213: 2652320881313142766
+    second: german shepherd bigger  battler_33
+  - first:
+      213: 7082981022423017341
+    second: german shepherd bigger  battler_34
+  - first:
+      213: -7016046376191045159
+    second: german shepherd bigger  battler_35
+  - first:
+      213: 2002117224576629930
+    second: german shepherd bigger  battler_36
+  - first:
+      213: 3894307047217947151
+    second: german shepherd bigger  battler_37
+  - first:
+      213: 6529346641687452604
+    second: german shepherd bigger  battler_38
+  - first:
+      213: -1132659757264759386
+    second: german shepherd bigger  battler_39
+  - first:
+      213: -5783709148273909578
+    second: german shepherd bigger  battler_40
+  - first:
+      213: 6271461251370146925
+    second: german shepherd bigger  battler_41
+  - first:
+      213: 5026491255311227596
+    second: german shepherd bigger  battler_42
+  - first:
+      213: 286040952615840589
+    second: german shepherd bigger  battler_43
+  - first:
+      213: 2250621764557704636
+    second: german shepherd bigger  battler_44
+  - first:
+      213: -5197879929353854252
+    second: german shepherd bigger  battler_45
+  - first:
+      213: 9193112761731409437
+    second: german shepherd bigger  battler_46
+  - first:
+      213: 501720476312910866
+    second: german shepherd bigger  battler_47
+  - first:
+      213: -6189029741465785675
+    second: german shepherd bigger  battler_48
+  - first:
+      213: 7268799348353046482
+    second: german shepherd bigger  battler_49
+  - first:
+      213: 1138503050465250827
+    second: german shepherd bigger  battler_50
+  - first:
+      213: 931077111835924137
+    second: german shepherd bigger  battler_51
+  - first:
+      213: 1679517765744846178
+    second: german shepherd bigger  battler_52
+  - first:
+      213: -8396745422467715238
+    second: german shepherd bigger  battler_53
+  - first:
+      213: 4145587250502431782
+    second: german shepherd bigger  battler_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 717
+        width: 140
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1a3344524e31df0800000000000000
+      internalID: -210573908847124046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_1
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 717
+        width: 144
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37534f92f4f26960800000000000000
+      internalID: 7593901244591331134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_2
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 717
+        width: 148
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de74d0acf4d75d2c0800000000000000
+      internalID: -4407478878666405907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 719
+        width: 139
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504b197ede45a3b80800000000000000
+      internalID: -8414319573019282427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_4
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 716
+        width: 128
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32526bc51e329b8c0800000000000000
+      internalID: -3983112944602438365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_5
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 715
+        width: 125
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b25ae4e8e295510800000000000000
+      internalID: 1538311936463416211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_6
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 720
+        width: 150
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7385e4db2f9886bc0800000000000000
+      internalID: -3789627410781153225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_7
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 714
+        width: 111
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a2093dd7be5cc30800000000000000
+      internalID: 4379165138340555300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_8
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 720
+        width: 118
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8707852b165f9e0800000000000000
+      internalID: -1588255874962392882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_9
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 574
+        width: 140
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8490593c12bd3f6d0800000000000000
+      internalID: -2957779592190555832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 574
+        width: 143
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8ba09394cc311a0800000000000000
+      internalID: -6839898794183968577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_11
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 573
+        width: 146
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc5b4e610fcb8ff0800000000000000
+      internalID: -32704967222797102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_12
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 576
+        width: 133
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1151c3653f2f09f70800000000000000
+      internalID: 9192113966400935185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_13
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 585
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1d7cbecbd7df8f0800000000000000
+      internalID: -505109332832562727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_14
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 571
+        width: 142
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec845d64a3eac6fd0800000000000000
+      internalID: -2347309740447151922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_15
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 571
+        width: 142
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9925439e0c490f4f0800000000000000
+      internalID: -796973577777425767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_16
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 573
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7fdc976f81dcf1a0800000000000000
+      internalID: -6774309325623206017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_17
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 573
+        width: 117
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e12f4e1886dc78f0800000000000000
+      internalID: -541321975078903327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_18
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 572
+        width: 119
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600887b9aadce4300800000000000000
+      internalID: 238353962933714950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_19
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 430
+        width: 132
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e35ea8cf7eef56d0800000000000000
+      internalID: -2999416594210335775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_20
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 431
+        width: 135
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3bee199984ebbd0800000000000000
+      internalID: -2612570909412772880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_21
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 431
+        width: 143
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989bfc37f80797c10800000000000000
+      internalID: 2051794866669599113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_22
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 433
+        width: 139
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03aa07167dc20f20800000000000000
+      internalID: 3387495776812442379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_23
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 430
+        width: 127
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81a890b36a5dd160800000000000000
+      internalID: 7051891975743119755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_24
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 430
+        width: 125
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ed254d45ebfc9a0800000000000000
+      internalID: -6210536089571893655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_25
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 431
+        width: 150
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6121557b04b00d8d0800000000000000
+      internalID: -2823744593779682794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_26
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 431
+        width: 146
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f0a630c00a745a0800000000000000
+      internalID: -6537080360647651497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_27
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 431
+        width: 141
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305bf3fc272249a70800000000000000
+      internalID: 8832722645679060227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_28
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 288
+        width: 140
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0651ea2af1d6010800000000000000
+      internalID: 1183637060634108075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_29
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 288
+        width: 144
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9146b307cfb08c0800000000000000
+      internalID: -4031851482417194547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_30
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 288
+        width: 148
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca8c680b89b5b3f0800000000000000
+      internalID: -885597744915510586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_31
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 288
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbbbc83159c5de70800000000000000
+      internalID: 9139432369500699596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_32
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 287
+        width: 117
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ecc0d50a0dafd050800000000000000
+      internalID: 5827566701399559398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_33
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 287
+        width: 119
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee75509f9cfeec420800000000000000
+      internalID: 2652320881313142766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_34
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 289
+        width: 149
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d776b5076bdcb4260800000000000000
+      internalID: 7082981022423017341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_35
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 289
+        width: 147
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d157735efef1ae90800000000000000
+      internalID: -7016046376191045159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_36
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 289
+        width: 142
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aacb4911203f8cb10800000000000000
+      internalID: 2002117224576629930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 148
+        width: 136
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02e9b360ab5b0630800000000000000
+      internalID: 3894307047217947151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_38
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 147
+        width: 143
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb9b293d26ec9a50800000000000000
+      internalID: 6529346641687452604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_39
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 147
+        width: 150
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a59adca3fbf740f0800000000000000
+      internalID: -1132659757264759386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_40
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 146
+        width: 126
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0e4fc4c232cbfa0800000000000000
+      internalID: -5783709148273909578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_41
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 146
+        width: 138
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c5b8ec7c4b80750800000000000000
+      internalID: 6271461251370146925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_42
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 146
+        width: 152
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccade6b4a2fa1c540800000000000000
+      internalID: 5026491255311227596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_43
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 146
+        width: 150
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ba1eb1bb838f300800000000000000
+      internalID: 286040952615840589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_44
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 146
+        width: 146
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd89301290db3f10800000000000000
+      internalID: 2250621764557704636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_45
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 146
+        width: 141
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d22bb96ebb6dd7b0800000000000000
+      internalID: -5197879929353854252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5
+        width: 136
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d166c1f795f749f70800000000000000
+      internalID: 9193112761731409437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_47
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 4
+        width: 143
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cbb2f6d1876f600800000000000000
+      internalID: 501720476312910866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_48
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 4
+        width: 150
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5baaa93bd362c1aa0800000000000000
+      internalID: -6189029741465785675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_49
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 2
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d79c2ede76ffd460800000000000000
+      internalID: 7268799348353046482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_50
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1
+        width: 117
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e0eaa0e76cccf00800000000000000
+      internalID: 1138503050465250827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_51
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1
+        width: 119
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a61a7d33b9dbec00800000000000000
+      internalID: 931077111835924137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_52
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 2
+        width: 161
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265ed2d6288de4710800000000000000
+      internalID: 1679517765744846178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_53
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 2
+        width: 161
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fac60b684c87b80800000000000000
+      internalID: -8396745422467715238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: german shepherd bigger  battler_54
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 2
+        width: 161
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624f59bd3a5188930800000000000000
+      internalID: 4145587250502431782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      german shepherd bigger  battler_0: -210573908847124046
+      german shepherd bigger  battler_1: 7593901244591331134
+      german shepherd bigger  battler_10: -6839898794183968577
+      german shepherd bigger  battler_11: -32704967222797102
+      german shepherd bigger  battler_12: 9192113966400935185
+      german shepherd bigger  battler_13: -505109332832562727
+      german shepherd bigger  battler_14: -2347309740447151922
+      german shepherd bigger  battler_15: -796973577777425767
+      german shepherd bigger  battler_16: -6774309325623206017
+      german shepherd bigger  battler_17: -541321975078903327
+      german shepherd bigger  battler_18: 238353962933714950
+      german shepherd bigger  battler_19: -2999416594210335775
+      german shepherd bigger  battler_2: -4407478878666405907
+      german shepherd bigger  battler_20: -2612570909412772880
+      german shepherd bigger  battler_21: 2051794866669599113
+      german shepherd bigger  battler_22: 3387495776812442379
+      german shepherd bigger  battler_23: 7051891975743119755
+      german shepherd bigger  battler_24: -6210536089571893655
+      german shepherd bigger  battler_25: -2823744593779682794
+      german shepherd bigger  battler_26: -6537080360647651497
+      german shepherd bigger  battler_27: 8832722645679060227
+      german shepherd bigger  battler_28: 1183637060634108075
+      german shepherd bigger  battler_29: -4031851482417194547
+      german shepherd bigger  battler_3: -8414319573019282427
+      german shepherd bigger  battler_30: -885597744915510586
+      german shepherd bigger  battler_31: 9139432369500699596
+      german shepherd bigger  battler_32: 5827566701399559398
+      german shepherd bigger  battler_33: 2652320881313142766
+      german shepherd bigger  battler_34: 7082981022423017341
+      german shepherd bigger  battler_35: -7016046376191045159
+      german shepherd bigger  battler_36: 2002117224576629930
+      german shepherd bigger  battler_37: 3894307047217947151
+      german shepherd bigger  battler_38: 6529346641687452604
+      german shepherd bigger  battler_39: -1132659757264759386
+      german shepherd bigger  battler_4: -3983112944602438365
+      german shepherd bigger  battler_40: -5783709148273909578
+      german shepherd bigger  battler_41: 6271461251370146925
+      german shepherd bigger  battler_42: 5026491255311227596
+      german shepherd bigger  battler_43: 286040952615840589
+      german shepherd bigger  battler_44: 2250621764557704636
+      german shepherd bigger  battler_45: -5197879929353854252
+      german shepherd bigger  battler_46: 9193112761731409437
+      german shepherd bigger  battler_47: 501720476312910866
+      german shepherd bigger  battler_48: -6189029741465785675
+      german shepherd bigger  battler_49: 7268799348353046482
+      german shepherd bigger  battler_5: 1538311936463416211
+      german shepherd bigger  battler_50: 1138503050465250827
+      german shepherd bigger  battler_51: 931077111835924137
+      german shepherd bigger  battler_52: 1679517765744846178
+      german shepherd bigger  battler_53: -8396745422467715238
+      german shepherd bigger  battler_54: 4145587250502431782
+      german shepherd bigger  battler_6: -3789627410781153225
+      german shepherd bigger  battler_7: 4379165138340555300
+      german shepherd bigger  battler_8: -1588255874962392882
+      german shepherd bigger  battler_9: -2957779592190555832
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
