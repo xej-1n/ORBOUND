@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e91b0b80d57604c9e1dd36f4ae81ca, type: 3}
+  m_Name: Reflect
+  m_EditorClassIdentifier: 
+  ShieldName: "\uBC18\uC0AC \uBC29\uD328"
+  Description: "\uBC1B\uC740 \uD53C\uD574\uC758 \uC77C\uBD80\uB97C \uACF5\uACA9\uD55C
+    \uC801\uC5D0\uAC8C \uBC18\uC0AC\uD569\uB2C8\uB2E4."
+  Icon: {fileID: 0}
+  Type: 1
+  ShieldAmount: 50
+  DamageReduction: 5
+  ReflectPercent: 30
+  RegenerationAmount: 0
+  ExplosionDamage: 0
+  ChargeBonusDamage: 0
+  EmergencyThreshold: 0
+  BarrierCount: 0
+  LifestealPercent: 0
+  ImpactDamage: 0
+  LastStandHeal: 0

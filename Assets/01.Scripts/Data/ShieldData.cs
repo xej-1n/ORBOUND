@@ -14,16 +14,13 @@ public class ShieldData : ScriptableObject
     [Header("#Shield")]
     public float ShieldAmount;
     public float DamageReduction;
-    public float Duration;
 
     [Header("#Special")]
-    public float ReflectPercent;
-    public float RegenerationAmount;
-    public float ExplosionDamage;
-    public float ChargeBonusDamage;
-    public float EmergencyThreshold;
-    public int BarrierCount;
-    public float LifestealPercent;
-    public float ImpactDamage;
-    public float LastStandHeal;
+    public float ReflectPercent; // 반사
+    public float RegenerationAmount; // 재생
+    public float ExplosionDamage; // 폭발
+    public float ChargeBonusDamage; // 충전
+    public float EmergencyThreshold; // 응급
+    public int BarrierCount; // 보호막
+    public float LifestealPercent; // 흡혈
 }
