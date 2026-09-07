@@ -12,4 +12,11 @@ public class EnemyData : ScriptableObject
     [Header("그외")]
     public int RewardGold;
     public GameObject Prefab;
+    private void OnValidate()
+    {
+        if (Prefab != null)
+        {
+         name = Prefab.name;
+        }
+    }
 }

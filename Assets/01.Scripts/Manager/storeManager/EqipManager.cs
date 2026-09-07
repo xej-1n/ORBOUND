@@ -6,7 +6,6 @@ public class EquipManager : MonoBehaviour
 
     [SerializeField] private WeaponData equippedWeapon;
     [SerializeField] private ShieldData equippedShield;
-    [SerializeField] private SkillData equippedSkill;
 
     private void Awake()
     {
@@ -19,53 +18,48 @@ public class EquipManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        DontDestroyOnLoad (gameObject);
     }
-
+    #region 무기
     public void EquipWeapon(WeaponData weapon)
     {
-        if (weapon == null)
-            return;
-
-        if (!InventoryManager.Instance.HasWeapon(weapon))
+        if (weapon == null || !InventoryManager.Instance.HasWeapon(weapon))
             return;
 
         equippedWeapon = weapon;
     }
-
-    public void EquipShield(ShieldData shield)
-    {
-        if (shield == null)
-            return;
-
-        if (!InventoryManager.Instance.HasShield(shield))
-            return;
-
-        equippedShield = shield;
-    }
-
-    public void EquipSkill(SkillData skill)
-    {
-        if (skill == null)
-            return;
-
-        if (!InventoryManager.Instance.HasSkill(skill))
-            return;
-
-        equippedSkill = skill;
-    }
-
     public WeaponData GetEquippedWeapon()
     {
         return equippedWeapon;
     }
+    public void UnequipWeapon()
+    {
+        equippedWeapon = null;
+    }
+    public bool HasEquippedWeapon()
+    {
+        return equippedWeapon != null;
+    }
+    #endregion
+    #region 방패
+    public void EquipShield(ShieldData shield)
+    {
+        if (shield == null || !InventoryManager.Instance.HasShield(shield))
+            return;
 
+        equippedShield = shield;
+    }
     public ShieldData GetEquippedShield()
     {
         return equippedShield;
     }
-
-    public SkillData GetEquippedSkill()
+    public void UnequipShield()
     {
-        return equippedSkill;
+        equippedShield = null;
     }
+    public bool HasEquippedShield()
+    {
+        return equippedShield != null;
+    }
+    #endregion
 }

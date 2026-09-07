@@ -20,6 +20,7 @@ public class InventoryManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        DontDestroyOnLoad(gameObject);
     }
 
     #region 무기
