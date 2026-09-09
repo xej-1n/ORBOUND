@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WeaponName: "\uACF5\uC131\uBB34\uAE30"
   Description: 
-  Icon: {fileID: 0}
+  Icon: {fileID: -3213345156874171423, guid: 4faa41b0954df4c4bac178018a38a3f7, type: 3}
   Type: 9
   DamageMultiplier: 1
   BonusDamage: 0

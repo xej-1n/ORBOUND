@@ -15,7 +15,7 @@ MonoBehaviour:
   ShieldName: "\uC7AC\uC0DD \uBC29\uD328"
   Description: "\uD134 \uC885\uB8CC \uC2DC \uBC29\uD328\uC758 \uCCB4\uB825\uC744
     \uD68C\uBCF5\uD569\uB2C8\uB2E4."
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 13297f56fcd934d80a25c48c557563e6, type: 3}
   Type: 2
   ShieldAmount: 40
   DamageReduction: 5
@@ -26,5 +26,3 @@ MonoBehaviour:
   EmergencyThreshold: 0
   BarrierCount: 0
   LifestealPercent: 0
-  ImpactDamage: 0
-  LastStandHeal: 0
