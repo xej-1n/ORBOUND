@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Regeneration
   m_EditorClassIdentifier: 
   ShieldName: "\uC7AC\uC0DD \uBC29\uD328"
-  Description: "\uD134 \uC885\uB8CC \uC2DC \uBC29\uD328\uC758 \uCCB4\uB825\uC744
-    \uD68C\uBCF5\uD569\uB2C8\uB2E4."
+  Description: "\uD134 \uC885\uB8CC \uC2DC \uBC29\uD328\uC758 \uCCB4\uB825\uC744\n\uD68C\uBCF5\uD569\uB2C8\uB2E4."
   Icon: {fileID: 21300000, guid: 13297f56fcd934d80a25c48c557563e6, type: 3}
   Type: 2
   ShieldAmount: 40

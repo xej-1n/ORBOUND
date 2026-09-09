@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Charge
   m_EditorClassIdentifier: 
   ShieldName: "\uCDA9\uC804 \uBC29\uD328"
-  Description: "\uD53C\uD574\uB97C \uBC1B\uC73C\uBA74 \uB2E4\uC74C \uACF5\uACA9\uC758
+  Description: "\uD53C\uD574\uB97C \uBC1B\uC73C\uBA74\n\uB2E4\uC74C \uACF5\uACA9\uC758
     \uD53C\uD574\uB7C9\uC774 \uC99D\uAC00\uD569\uB2C8\uB2E4."
   Icon: {fileID: 21300000, guid: 681d3bac2a6914623949ce0f01e3d09a, type: 3}
   Type: 4

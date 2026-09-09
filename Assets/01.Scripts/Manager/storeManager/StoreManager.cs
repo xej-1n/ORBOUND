@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoreManager : MonoBehaviour
 {
     [SerializeField] private Transform content;
     [SerializeField] private ItemSlot itemSlotPrefab;
+    [SerializeField] private ItemInfoPanel infoPanel;
 
     [Header("#Shop Items")]
     [SerializeField] private List<WeaponData> weapons = new List<WeaponData>();
@@ -21,19 +23,19 @@ public class StoreManager : MonoBehaviour
         foreach (WeaponData weapon in weapons)
         {
             ItemSlot slot = Instantiate(itemSlotPrefab, content);
-            slot.SetItem(weapon.WeaponName, weapon.Icon);
+            slot.SetItem(weapon.WeaponName, weapon.Icon, weapon.Description, infoPanel);
         }
 
         foreach (ShieldData shield in shields)
         {
             ItemSlot slot = Instantiate(itemSlotPrefab, content);
-            slot.SetItem(shield.ShieldName, shield.Icon);
+            slot.SetItem(shield.ShieldName, shield.Icon, shield.Description, infoPanel);
         }
 
         foreach (SkillData skill in skills)
         {
             ItemSlot slot = Instantiate(itemSlotPrefab, content);
-            slot.SetItem(skill.SkillName, skill.Icon);
+            slot.SetItem(skill.SkillName, skill.Icon, skill.Description, infoPanel);
         }
     }
 }

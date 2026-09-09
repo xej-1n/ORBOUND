@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Barrier
   m_EditorClassIdentifier: 
   ShieldName: "\uBCF4\uD638\uB9C9"
-  Description: "\uC77C\uC815 \uD69F\uC218\uC758 \uACF5\uACA9\uC744 \uC644\uC804\uD788
+  Description: "\uC77C\uC815 \uD69F\uC218\uC758 \uACF5\uACA9\uC744\n\uC644\uC804\uD788
     \uBB34\uD6A8\uD654\uD569\uB2C8\uB2E4."
   Icon: {fileID: 21300000, guid: 3026ffa8845c04572a324c9a7d942006, type: 3}
   Type: 6

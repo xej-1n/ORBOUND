@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Explosion
   m_EditorClassIdentifier: 
   ShieldName: "\uD3ED\uD314 \uBC29\uD328"
-  Description: "\uBC29\uD328\uAC00 \uD30C\uAD34\uB418\uBA74 \uBAA8\uB4E0 \uC801\uC5D0\uAC8C
+  Description: "\uBC29\uD328\uAC00 \uD30C\uAD34\uB418\uBA74 \n\uBAA8\uB4E0 \uC801\uC5D0\uAC8C
     \uD53C\uD574\uB97C \uC90D\uB2C8\uB2E4"
   Icon: {fileID: 21300000, guid: 74048a635c0db494aad452e4354b0260, type: 3}
   Type: 3
