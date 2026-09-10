@@ -10,6 +10,7 @@ public class WeaponData : ScriptableObject
     [TextArea] public string Description;
     public Sprite Icon;
     public WeaponType Type;
+    public int Price;
 
     [Header("#Damage")]
     public float DamageMultiplier = 1f;

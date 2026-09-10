@@ -10,6 +10,7 @@ public class ShieldData : ScriptableObject
     [TextArea] public string Description;
     public Sprite Icon;
     public ShieldType Type;
+    public int Price;
 
     [Header("#Shield")]
     public float ShieldAmount;

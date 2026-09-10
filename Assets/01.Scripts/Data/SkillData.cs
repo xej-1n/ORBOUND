@@ -12,6 +12,7 @@ public class SkillData : ScriptableObject
     public Sprite Icon;
     public SkillType Type;
     public SkillEffectType EffectType;
+    public int Price;
 
     [Header("#Cost")]
     public float EnergyCost;
