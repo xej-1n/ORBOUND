@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Focus
   m_EditorClassIdentifier: 
   WeaponName: "\uC9D1\uC911\uBB34\uAE30"
-  Description: 
+  Description: "\uAC19\uC740 \uC801\uC744 \uACF5\uACA9\uD560\uC218\uB85D \uD53C\uD574\uB97C 
+    \uC99D\uAC00 \uC2DC\uD0B5\uB2C8\uB2E4."
   Icon: {fileID: 3309734466491882770, guid: 3c71c8f09ffdabf40b6925c9e055d3f9, type: 3}
   Type: 10
+  Price: 0
   DamageMultiplier: 1
   BonusDamage: 0
   DefenseIgnore: 0

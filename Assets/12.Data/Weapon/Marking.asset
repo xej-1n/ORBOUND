@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Marking
   m_EditorClassIdentifier: 
   WeaponName: "\uD45C\uC2DD\uBB34\uAE30"
-  Description: 
+  Description: "\uACF5\uACA9\uD55C \uC801\uC5D0\uAC8C \uD45C\uC2DD\uC744 \uC8FC\uACE0,
+    \uCD94\uAC00 \uD53C\uD574\uB3C4 \uC90D\uB2C8\uB2E4."
   Icon: {fileID: 2786325586036497823, guid: 2116ac7da2d6f474bac66d8459a577e6, type: 3}
   Type: 8
+  Price: 0
   DamageMultiplier: 1
   BonusDamage: 0
   DefenseIgnore: 0

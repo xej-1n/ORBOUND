@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2acee25d66d524b91d13990ca40018, type: 3}
   m_Name: Explosive
   m_EditorClassIdentifier: 
-  WeaponName: "\uD3ED\uD314\uBB34\uAE30"
-  Description: 
+  WeaponName: "\uD3ED\uBC1C\uBB34\uAE30"
+  Description: "\uB300\uC0C1 \uC8FC\uBCC0 \uC801\uC5D0\uAC8C \uD53C\uD574"
   Icon: {fileID: 4968295190091404838, guid: cc69d1fde1ece094fb2fa057b262f58a, type: 3}
   Type: 3
+  Price: 0
   DamageMultiplier: 1
   BonusDamage: 0
   DefenseIgnore: 0

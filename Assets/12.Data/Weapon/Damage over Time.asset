@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Damage over Time
   m_EditorClassIdentifier: 
   WeaponName: "\uB3C4\uD2B8\uBB34\uAE30"
-  Description: 
+  Description: "\uACF5\uACA9 \uD6C4 \uBA87 \uD134 \uB3D9\uC548 \uCD94\uAC00 \uD53C\uD574\uB97C
+    \uC90D\uB2C8\uB2E4."
   Icon: {fileID: -7889540581452593437, guid: 52c7cb217f1b90e4488584fdd0b03450, type: 3}
   Type: 7
+  Price: 0
   DamageMultiplier: 1
   BonusDamage: 0
   DefenseIgnore: 0

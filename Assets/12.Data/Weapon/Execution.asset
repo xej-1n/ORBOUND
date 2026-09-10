@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Execution
   m_EditorClassIdentifier: 
   WeaponName: "\uCC98\uD615\uBB34\uAE30"
-  Description: 
+  Description: "\uC801 HP\uAC00 \uB0AE\uC744\uC218\uB85D \uD53C\uD574\uB97C \uC99D\uAC00
+    \uC2DC\uD0B5\uB2C8\uB2E4."
   Icon: {fileID: 2082203898102001316, guid: b54b2672c4bd8a54eb4c115c9e8ce743, type: 3}
   Type: 6
+  Price: 0
   DamageMultiplier: 1
   BonusDamage: 0
   DefenseIgnore: 0

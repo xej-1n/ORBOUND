@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Splitting
   m_EditorClassIdentifier: 
   WeaponName: "\uBD84\uC5F4\uBB34\uAE30"
-  Description: 
+  Description: "\uACF5\uACA9\uC774 \uC5EC\uB7EC \uBC88\uC758 \uC791\uC740 \uD53C\uD574\uB85C
+    \uBD84\uD560\uB429\uB2C8\uB2E4."
   Icon: {fileID: -8265773650094750068, guid: a7106d5955426a04f955bf3adf93caf0, type: 3}
   Type: 4
+  Price: 0
   DamageMultiplier: 0.7
   BonusDamage: 0
   DefenseIgnore: 0

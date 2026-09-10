@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Vampiric
   m_EditorClassIdentifier: 
   WeaponName: "\uD761\uD608\uBB34\uAE30"
-  Description: 
+  Description: "\uD53C\uD574\uB7C9 \uC77C\uBD80\uB9CC\uD07C HP \uD68C\uBCF5 \uD569\uB2C8\uB2E4."
   Icon: {fileID: 3577258576886918514, guid: 77bd9fa8e4599654eb942c6e7e8d7b2d, type: 3}
   Type: 5
+  Price: 0
   DamageMultiplier: 1
   BonusDamage: 0
   DefenseIgnore: 0
