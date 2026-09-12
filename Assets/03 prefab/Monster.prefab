@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6893993858485837202}
+  - component: {fileID: 7260119031911388657}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -25,13 +26,26 @@ Transform:
   m_GameObject: {fileID: 2195991510383537394}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -961.1098, y: -538.4994, z: -9.891375}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3377354883688802139}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7260119031911388657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2195991510383537394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a08a9e0804c13e54484e89fa4445f68e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyData: {fileID: 11400000, guid: 17b0538a52f98624ba79abdbbf7fe97d, type: 2}
 --- !u!1 &4159891141784307085
 GameObject:
   m_ObjectHideFlags: 0
