@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -43,5 +44,14 @@ public class UIManager : MonoBehaviour
     public void SetGrade(string grade)
     {
         _gradeText.text = grade;
+    }
+
+    public void Store()
+    {
+        SceneManager.LoadScene("Store");
+    }
+    public void Setup()
+    {
+        SceneManager.LoadScene("Setup");
     }
 }
