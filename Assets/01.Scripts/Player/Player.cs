@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
     {
         _hp = _maxHp;
     }
-
     public void Damage(int enemyAtk)
     {
         int temp;
