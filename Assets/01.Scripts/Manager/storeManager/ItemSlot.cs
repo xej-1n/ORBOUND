@@ -1,4 +1,3 @@
-using NUnit.Framework.Interfaces;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,10 +10,10 @@ public class ItemSlot : MonoBehaviour
 
     private string description;
     private ItemInfoPanel infoPanel;
-    private ScriptableObject itemData;
+    private ShopItemData itemData;
     private StoreManager storeManager;
 
-    public void SetItem(string name, Sprite sprite, string desc, ItemInfoPanel panel, ScriptableObject data ,StoreManager manager)
+    public void SetItem(string name, Sprite sprite, string desc, ItemInfoPanel panel, ShopItemData data, StoreManager manager)
     {
         itemName.text = name;
         icon.sprite = sprite;
@@ -23,13 +22,16 @@ public class ItemSlot : MonoBehaviour
         itemData = data;
         storeManager = manager;
 
-
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(ShowInfo);
     }
 
     private void ShowInfo()
     {
-        infoPanel.Show(itemName.text, icon.sprite, description, itemData , storeManager);
+        infoPanel.Show(itemName.text, icon.sprite, description, itemData, storeManager,this);
+    }
+    public void SetPurchased()
+    {
+        icon.color = Color.gray;
     }
 }

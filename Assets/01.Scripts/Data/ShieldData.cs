@@ -3,14 +3,13 @@ using UnityEngine;
 public enum ShieldType { Basic, Reflect, Regeneration, Explosion, Charge, Emergency, Barrier, Lifesteal, Impact, LastStand }
 
 [CreateAssetMenu(fileName = "ShieldData", menuName = "ORBBOUND/Shield Data")]
-public class ShieldData : ScriptableObject
+public class ShieldData : ShopItemData
 {
     [Header("#Basic")]
     public string ShieldName;
     [TextArea] public string Description;
     public Sprite Icon;
     public ShieldType Type;
-    public int Price;
 
     [Header("#Shield")]
     public float ShieldAmount;

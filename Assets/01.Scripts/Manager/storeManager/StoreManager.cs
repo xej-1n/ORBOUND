@@ -7,11 +7,13 @@ public class StoreManager : MonoBehaviour
     [SerializeField] private Transform content;
     [SerializeField] private ItemSlot itemSlotPrefab;
     [SerializeField] private ItemInfoPanel infoPanel;
+    [SerializeField] private ShopKeeper shopKeeper;
 
     [Header("#Shop Items")]
     [SerializeField] private List<WeaponData> weapons = new List<WeaponData>();
     [SerializeField] private List<ShieldData> shields = new List<ShieldData>();
     [SerializeField] private List<SkillData> skills = new List<SkillData>();
+
 
     private void Start()
     {
@@ -38,22 +40,19 @@ public class StoreManager : MonoBehaviour
             slot.SetItem(skill.SkillName, skill.Icon, skill.Description, infoPanel, skill,this);
         }
     }
-    public void BuyItem(ScriptableObject item)
+    public bool BuyItem(ShopItemData item)
     {
-        if (item is WeaponData weapon)
+        if (!moneyManager.Instance.SpendGold(item.Price))
         {
-            InventoryManager.Instance.AddWeapons(weapon);
-            Debug.Log(weapon.WeaponName + " 구매");
+            shopKeeper.ShowMessage(" 음...\n 돈이 좀 부족하네.");
+            return false;
         }
-        else if (item is ShieldData shield)
-        {
-            InventoryManager.Instance.AddShields(shield);
-            Debug.Log(shield.ShieldName + " 구매");
-        }
-        else if (item is SkillData skill)
-        {
-            InventoryManager.Instance.AddSkills(skill);
-            Debug.Log(skill.SkillName + " 구매");
-        }
+
+        InventoryManager.Instance.AddItem(item);
+        shopKeeper.ShowMessage("좋은 물건을 골랐네!\n잘 쓰게!");
+        Debug.Log(item.name + " 구매");
+
+        return true;
     }
+
 }

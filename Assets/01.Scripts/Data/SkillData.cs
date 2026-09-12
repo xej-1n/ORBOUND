@@ -4,7 +4,7 @@ public enum SkillType { Attack, Defense, Utility, CrowdControl }
 public enum SkillEffectType { None, HeavyDamage, Pierce, Explosion, Shield }
 
 [CreateAssetMenu(fileName = "SkillData", menuName = "ORBBOUND/Skill Data")]
-public class SkillData : ScriptableObject
+public class SkillData : ShopItemData
 {
     [Header("#Basic")]
     public string SkillName;
@@ -12,7 +12,6 @@ public class SkillData : ScriptableObject
     public Sprite Icon;
     public SkillType Type;
     public SkillEffectType EffectType;
-    public int Price;
 
     [Header("#Cost")]
     public float EnergyCost;

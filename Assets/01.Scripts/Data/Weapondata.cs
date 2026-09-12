@@ -3,14 +3,13 @@ using UnityEngine;
 public enum WeaponType { Basic, Pierce, Chain, Explosion, Split, Lifesteal, Execute, DamageOverTime , Mark, Siege, Spread, Focus }
 
 [CreateAssetMenu(fileName = "WeaponData", menuName = "ORBBOUND/Weapon Data")]
-public class WeaponData : ScriptableObject
+public class WeaponData : ShopItemData
 {
     [Header("#Basic")]
     public string WeaponName;
     [TextArea] public string Description;
     public Sprite Icon;
     public WeaponType Type;
-    public int Price;
 
     [Header("#Damage")]
     public float DamageMultiplier = 1f;

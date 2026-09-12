@@ -22,7 +22,20 @@ public class InventoryManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
+    public bool HasItem(ShopItemData item)
+    {
+        if (item is WeaponData weapon) return HasWeapon(weapon);
+        if (item is ShieldData shield) return HasShield(shield);
+        if (item is SkillData skill) return HasSkill(skill);
 
+        return false;
+    }
+    public void AddItem(ShopItemData item)
+    {
+        if (item is WeaponData weapon) AddWeapons(weapon);
+        else if (item is ShieldData shield) AddShields(shield);
+        else if (item is SkillData skill) AddSkills(skill);
+    }
     #region 무기
     public void AddWeapons(WeaponData weapon)
     {

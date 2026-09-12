@@ -8,39 +8,46 @@ public class ItemInfoPanel : MonoBehaviour
     [SerializeField] private TMP_Text itemName;
     [SerializeField] private TMP_Text price;
     [SerializeField] private TMP_Text description;
+    [SerializeField] private TMP_Text buyBtnText;
     [SerializeField] private Button buyBtn;
 
-    private ScriptableObject itemData;
+    private ShopItemData itemData;
     private StoreManager storeManager;
+    private ItemSlot itemSlot;
 
     private void Start()
     {
         gameObject.SetActive(false);
     }
 
-    public void Show(string name, Sprite sprite, string desc, ScriptableObject data, StoreManager manager)
+    public void Show(string name, Sprite sprite, string desc, ShopItemData data, StoreManager manager, ItemSlot slot)
     {
         icon.sprite = sprite;
         itemName.text = name;
         description.text = desc;
+        price.text = data.Price + "G";
         itemData = data;
         storeManager = manager;
-
-        if (data is WeaponData weapon)
-            price.text = weapon.Price + "G";
-        else if (data is ShieldData shield)
-            price.text = shield.Price + "G";
-        else if (data is SkillData skill)
-            price.text = skill.Price + "G";
+        itemSlot = slot;
 
         buyBtn.onClick.RemoveAllListeners();
         buyBtn.onClick.AddListener(Buy);
 
+        bool hasItem = InventoryManager.Instance.HasItem(data);
+        buyBtn.interactable = !hasItem;
+        buyBtnText.text = hasItem ? "구매완료" : "구매";
+
         gameObject.SetActive(true);
     }
+
     private void Buy()
     {
-        storeManager.BuyItem(itemData);
+        if (storeManager.BuyItem(itemData))
+        {
+            itemSlot.SetPurchased();
+            buyBtn.interactable = false;
+            buyBtnText.text = "구매완료";
+        }
     }
 
     public void Hide()

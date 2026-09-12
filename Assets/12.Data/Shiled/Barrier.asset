@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95e91b0b80d57604c9e1dd36f4ae81ca, type: 3}
   m_Name: Barrier
   m_EditorClassIdentifier: 
+  Price: 0
   ShieldName: "\uBCF4\uD638\uB9C9"
   Description: "\uC77C\uC815 \uD69F\uC218\uC758 \uACF5\uACA9\uC744\n\uC644\uC804\uD788
     \uBB34\uD6A8\uD654\uD569\uB2C8\uB2E4."
