@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 317770878}
   - component: {fileID: 317770877}
   - component: {fileID: 317770879}
+  - component: {fileID: 317770880}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -222,6 +223,28 @@ MonoBehaviour:
   _maxHp: 100
   _attack: 1
   _defense: 1
+--- !u!95 &317770880
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317770875}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a14cfbb550aee94784bc3508dd036c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &339323690
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,6 +342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 706474649}
   - component: {fileID: 706474648}
+  - component: {fileID: 706474650}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -396,6 +420,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &706474650
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706474646}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: d565f1a7120ebe74989399f2ab1ab974, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &791397956
 GameObject:
   m_ObjectHideFlags: 0
