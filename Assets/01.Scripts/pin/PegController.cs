@@ -1,32 +1,53 @@
 using UnityEngine;
 
-public class PegController : MonoBehaviour  //핀 피격 처리 스크립트 
+
+public enum PegType { TopBumper, BottomBumper, LeftObstacle, RightObstacle }
+
+public class PegController : MonoBehaviour
 {
+    [Header("핀 설정")]
+    public PegType pegType; 
+
     private SpriteRenderer spriteRenderer;
-    private bool isHit = false;
+    private int hitCount = 0;
+    private int maxHits = 6; 
+
+  
+    private float lastHitTime = -1f;
+    private float hitCooldown = 0.3f; 
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-
     void OnCollisionEnter2D(Collision2D collision)
     {
-     
-        if (collision.gameObject.CompareTag("Orb") && !isHit)
+        if (collision.gameObject.CompareTag("Orb"))
         {
-            HitPeg();
+        
+            if (Time.time - lastHitTime >= hitCooldown)
+            {
+                HitPeg();
+            }
         }
     }
 
     void HitPeg()
     {
-        isHit = true;
+        if (hitCount >= maxHits) return; 
 
+        hitCount++;
+        lastHitTime = Time.time; 
 
-        spriteRenderer.color = Color.gray;
+    
 
- 
+        if (hitCount >= maxHits)
+        {
+           
+            Color fadedColor = spriteRenderer.color;
+            fadedColor.a = 0.4f;
+            spriteRenderer.color = fadedColor;
+        }
     }
 }
