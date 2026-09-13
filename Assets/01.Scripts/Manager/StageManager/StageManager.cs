@@ -1,10 +1,12 @@
 using System.Collections;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class StageManager : MonoBehaviour
 {
-    [SerializeField] private StageData currentStage;
+    [SerializeField] private StageData[] stageData;
+    private StageData currentStage;
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private Player player;
     [SerializeField] private Enemy enemyPrefab;
@@ -14,8 +16,7 @@ public class StageManager : MonoBehaviour
 
     private void Start()
     {
-        LoadStage(currentStage);
-        StartCoroutine(RunPlayTrun());
+        LoadStage(stageData[0]);
     }
 
     public void LoadStage(StageData stageData)
@@ -31,13 +32,15 @@ public class StageManager : MonoBehaviour
             if (enemies[i] != null)
                 enemies[i]._enemyData = enemyData;
         }
+
+        StartCoroutine(RunPlayTrun());
     }
     public IEnumerator RunPlayTrun()
     {
         yield return new WaitForSeconds(1f);
         while (true)
         {
-            int damage = 50;
+            int damage = 200;
             //핀볼 해야함(임시 데미지 50으로 계산)
 
             for (int i = 0; i < currentStage.Enemies.Count; i++)
@@ -60,7 +63,7 @@ public class StageManager : MonoBehaviour
             }
             if(enemyAllDead)
             {
-                //승리처리
+                Clear();
                 break; 
             }
 
@@ -76,9 +79,36 @@ public class StageManager : MonoBehaviour
             }
             if (player._hp <= 0)
             {
-                //게임오버처리
+                Gameover();
                 break;
             }
         }
+    }
+
+    private void Clear()
+    {
+        int currentLv = 0;
+        for(int i = 0;i < stageData.Length; i++)
+        {
+            if (stageData[i] == currentStage)
+            {
+                currentLv = i;
+                break;
+            }
+        }
+        int nextLv = currentLv + 1;
+        if(nextLv >= stageData.Length)
+        {
+            // 다했음. 다음 씬
+        }
+        else
+        {
+            LoadStage(stageData[nextLv]);
+        }
+    }
+
+    private void Gameover()
+    {
+
     }
 }
