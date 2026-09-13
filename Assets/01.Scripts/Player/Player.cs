@@ -22,8 +22,13 @@ public class Player : MonoBehaviour
         temp = enemyAtk - _defense;
         if (temp > 0)
         {
-            _hp = temp;
+            _hp -= temp;
             Debug.Log($"Player {temp}피해");
+        }
+
+        if (_hp <= 0)
+        {
+            _animator.SetBool("isDead", true);
         }
     }
 }

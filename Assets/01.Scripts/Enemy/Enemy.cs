@@ -29,6 +29,11 @@ public class Enemy : MonoBehaviour
             _hp -= temp;
             Debug.Log($"{_enemyData.name} {temp}피해");
         }
+
+        if(_hp <= 0)
+        {
+            _animator.SetBool("isDead", true);
+        }
     }
 
     private void Start()
