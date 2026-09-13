@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -5,6 +6,7 @@ public class Player : MonoBehaviour
     public Animator _animator;
     public int _maxHp;
     public int _hp;
+    public SpriteRenderer _spriteRenderer;
     public int _defense;
     private void Start()
     {
@@ -23,6 +25,8 @@ public class Player : MonoBehaviour
         if (temp > 0)
         {
             _hp -= temp;
+            _spriteRenderer.DOKill();
+            _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
             Debug.Log($"Player {temp}피해");
         }
 

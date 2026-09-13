@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -27,6 +28,8 @@ public class Enemy : MonoBehaviour
         if (temp > 0)
         {
             _hp -= temp;
+            _spriteRenderer.DOKill();
+            _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
             Debug.Log($"{_enemyData.name} {temp}피해");
         }
 
