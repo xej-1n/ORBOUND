@@ -397,8 +397,10 @@ MonoBehaviour:
   _animator: {fileID: 317770880}
   _maxHp: 100
   _hp: 0
-  _spriteRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 317770877}
   _defense: 1
+  _weapon: {fileID: 0}
+  _shield: {fileID: 0}
 --- !u!95 &317770880
 Animator:
   serializedVersion: 7
@@ -935,6 +937,30 @@ PrefabInstance:
     - target: {fileID: 2194876355293761159, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
       propertyPath: m_ReferenceResolution.y
       value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567858556940336452, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567858556940336452, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567858556940336452, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103612645006940843, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103612645006940843, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103612645006940843, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3884256370963075870, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
       propertyPath: m_RenderMode
