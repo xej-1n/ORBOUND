@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsBoss: 1
   Enemies:
-  - {fileID: 11400000, guid: 6e699fc7dec10024399a96856fabfbb9, type: 2}
-  - {fileID: 11400000, guid: 6e699fc7dec10024399a96856fabfbb9, type: 2}
-  - {fileID: 11400000, guid: 17b0538a52f98624ba79abdbbf7fe97d, type: 2}
+  - {fileID: 11400000, guid: c631b77ac8ecd4d47aad47c66b76cc03, type: 2}
+  - {fileID: 11400000, guid: 30970284fc399e54a8d5e2fd5cf17737, type: 2}
+  - {fileID: 11400000, guid: 05ffa2124a71c2840852d13f5d289cca, type: 2}

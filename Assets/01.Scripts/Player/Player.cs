@@ -2,19 +2,28 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public Animator _animator;
     public int _maxHp;
-    private int _hp;
-    public int _attack; //임시, 무기나 핀볼 완료시 수정
+    public int _hp;
     public int _defense;
     private void Start()
     {
         _hp = _maxHp;
+    }
+
+    public void Attack(Enemy target, int pinAtk)
+    {
+        _animator.SetTrigger("onAttack");
+        target.Damage(pinAtk);
     }
     public void Damage(int enemyAtk)
     {
         int temp;
         temp = enemyAtk - _defense;
         if (temp > 0)
+        {
             _hp = temp;
+            Debug.Log($"Player {temp}피해");
+        }
     }
 }
