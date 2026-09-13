@@ -507,6 +507,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &382772478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382772479}
+  m_Layer: 0
+  m_Name: Pos1 (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &382772479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382772478}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.17, y: -1.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1293932565}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &791397956
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,11 +646,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 355a85bdeded71a4c883619b6d493a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStage: {fileID: 11400000, guid: 540e4af54b8d84346be46a478fb80069, type: 2}
+  stageData:
+  - {fileID: 11400000, guid: 540e4af54b8d84346be46a478fb80069, type: 2}
+  - {fileID: 11400000, guid: c7fa7c010bc47da4e9b7435f7ebf2b03, type: 2}
+  - {fileID: 11400000, guid: 4efb4e385760164428f26eed60350e34, type: 2}
+  - {fileID: 11400000, guid: 738fc4f21eaa3824f96b878c711b618d, type: 2}
   spawnPoints:
   - {fileID: 1294720417}
   - {fileID: 2076391154}
   - {fileID: 1880555815}
+  - {fileID: 382772479}
   player: {fileID: 317770879}
   enemyPrefab: {fileID: 7260119031911388657, guid: 602ce3d1b2876344a9b96d0286e4414e, type: 3}
 --- !u!4 &1293932565
@@ -638,6 +674,7 @@ Transform:
   - {fileID: 2076391154}
   - {fileID: 1880555815}
   - {fileID: 1294720417}
+  - {fileID: 382772479}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1294720416
