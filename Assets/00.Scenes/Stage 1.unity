@@ -397,6 +397,7 @@ MonoBehaviour:
   _animator: {fileID: 317770880}
   _maxHp: 100
   _hp: 0
+  _spriteRenderer: {fileID: 0}
   _defense: 1
 --- !u!95 &317770880
 Animator:
