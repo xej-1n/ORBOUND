@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StageManager : MonoBehaviour
 {
@@ -99,7 +101,8 @@ public class StageManager : MonoBehaviour
         int nextLv = currentLv + 1;
         if(nextLv >= stageData.Length)
         {
-            // 다했음. 다음 씬
+            int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+            SceneManager.LoadScene(nextSceneIndex);
         }
         else
         {
@@ -109,6 +112,6 @@ public class StageManager : MonoBehaviour
 
     private void Gameover()
     {
-
+        SceneManager.LoadScene("Title");
     }
 }
