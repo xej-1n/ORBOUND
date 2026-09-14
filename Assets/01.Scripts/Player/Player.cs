@@ -1,6 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public Animator _animator;
@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public int _hp;
     public SpriteRenderer _spriteRenderer;
     public int _defense;
-
+    public Slider _hpSlider;
     public WeaponData _weapon;
     public ShieldData _shield;
 
@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
             _hp -= temp;
             _spriteRenderer.DOKill();
             _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
+            _hpSlider.value = (float)_hp / _maxHp;
             Debug.Log($"Player {temp}피해");
         }
 

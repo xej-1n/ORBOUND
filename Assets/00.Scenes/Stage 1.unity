@@ -399,6 +399,7 @@ MonoBehaviour:
   _hp: 0
   _spriteRenderer: {fileID: 317770877}
   _defense: 1
+  _hpSlider: {fileID: 1270710185}
   _weapon: {fileID: 0}
   _shield: {fileID: 0}
 --- !u!95 &317770880
@@ -620,6 +621,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270710185 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9081185542996529755, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
+  m_PrefabInstance: {fileID: 2504910996478627057}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1293932563
 GameObject:
   m_ObjectHideFlags: 0
