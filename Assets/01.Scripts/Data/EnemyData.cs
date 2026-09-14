@@ -12,6 +12,8 @@ public class EnemyData : ScriptableObject
     [Header("그외")]
     public int RewardGold;
     public GameObject Prefab;
+    public RuntimeAnimatorController animatorController;
+    public bool isFlip;
     private void OnValidate()
     {
         if (Prefab != null)
