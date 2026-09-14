@@ -1243,7 +1243,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a6dbe4e4319b7dc4b8e70d9840fd92db, type: 2}
   - {fileID: 11400000, guid: e92cfc0b1b1b3a64cae798dded987819, type: 2}
   - {fileID: 11400000, guid: 9f3ef024b31ff9649a1b5e662a9fa81d, type: 2}
-  skills: []
 --- !u!4 &715220003
 Transform:
   m_ObjectHideFlags: 0
@@ -1408,7 +1407,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 130, y: 130}
-  m_Spacing: {x: 90, y: 150}
+  m_Spacing: {x: 95, y: 150}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &833579601
@@ -1529,7 +1528,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
-  m_wordSpacing: 35
+  m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -2068,7 +2067,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
-  m_wordSpacing: 35
+  m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -2205,7 +2204,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
-  m_wordSpacing: 35
+  m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -2352,7 +2351,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapons: []
   shields: []
-  skills: []
 --- !u!4 &1998627532
 Transform:
   m_ObjectHideFlags: 0

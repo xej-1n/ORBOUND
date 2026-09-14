@@ -12,8 +12,6 @@ public class StoreManager : MonoBehaviour
     [Header("#Shop Items")]
     [SerializeField] private List<WeaponData> weapons = new List<WeaponData>();
     [SerializeField] private List<ShieldData> shields = new List<ShieldData>();
-    [SerializeField] private List<SkillData> skills = new List<SkillData>();
-
 
     private void Start()
     {
@@ -32,12 +30,6 @@ public class StoreManager : MonoBehaviour
         {
             ItemSlot slot = Instantiate(itemSlotPrefab, content);
             slot.SetItem(shield.ShieldName, shield.Icon, shield.Description, infoPanel, shield,this);
-        }
-
-        foreach (SkillData skill in skills)
-        {
-            ItemSlot slot = Instantiate(itemSlotPrefab, content);
-            slot.SetItem(skill.SkillName, skill.Icon, skill.Description, infoPanel, skill,this);
         }
     }
     public bool BuyItem(ShopItemData item)
