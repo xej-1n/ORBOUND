@@ -38,7 +38,8 @@ public class PegController : MonoBehaviour
         else if (pegType == PegType.BottomBumper) score = 4;
         else score = 6;
 
-        ScoreManager.instance.AddScore(score);
+     
+        ScoreManager.instance.AddPegHit(pegType, score);
 
         if (hitCount >= maxHits)
         {
