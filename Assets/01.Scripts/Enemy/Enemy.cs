@@ -30,7 +30,6 @@ public class Enemy : MonoBehaviour
             _hp -= temp;
             _spriteRenderer.DOKill();
             _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
-            Debug.Log($"{_enemyData.name} {temp}피해");
         }
 
         if(_hp <= 0)

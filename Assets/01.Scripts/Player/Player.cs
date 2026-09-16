@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
             _spriteRenderer.DOKill();
             _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
             _hpSlider.value = (float)_hp / _maxHp;
-            Debug.Log($"Player {temp}피해");
+            
         }
 
         if (_hp <= 0)
