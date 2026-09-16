@@ -1,20 +1,17 @@
 using UnityEngine;
 
-
 public enum PegType { TopBumper, BottomBumper, LeftObstacle, RightObstacle }
 
 public class PegController : MonoBehaviour
 {
     [Header("핀 설정")]
-    public PegType pegType; 
+    public PegType pegType;
 
     private SpriteRenderer spriteRenderer;
     private int hitCount = 0;
-    private int maxHits = 6; 
-
-  
+    private int maxHits = 6;
     private float lastHitTime = -1f;
-    private float hitCooldown = 0.3f; 
+    private float hitCooldown = 0.3f;
 
     void Start()
     {
@@ -25,26 +22,26 @@ public class PegController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Orb"))
         {
-        
-            if (Time.time - lastHitTime >= hitCooldown)
-            {
-                HitPeg();
-            }
+            if (Time.time - lastHitTime >= hitCooldown) HitPeg();
         }
     }
 
     void HitPeg()
     {
-        if (hitCount >= maxHits) return; 
+        if (hitCount >= maxHits) return;
 
         hitCount++;
-        lastHitTime = Time.time; 
+        lastHitTime = Time.time;
 
-    
+        int score = 0;
+        if (pegType == PegType.TopBumper) score = 8;
+        else if (pegType == PegType.BottomBumper) score = 4;
+        else score = 6;
+
+        ScoreManager.instance.AddScore(score);
 
         if (hitCount >= maxHits)
         {
-           
             Color fadedColor = spriteRenderer.color;
             fadedColor.a = 0.4f;
             spriteRenderer.color = fadedColor;
