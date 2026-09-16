@@ -52,6 +52,6 @@ public class UIManager : MonoBehaviour
     }
     public void Setup()
     {
-        SceneManager.LoadScene("Setup");
+        SceneManager.LoadScene("Weapon warehouse");
     }
 }
