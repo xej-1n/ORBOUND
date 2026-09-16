@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,7 @@ public class StoreManager : MonoBehaviour
     [SerializeField] private ItemSlot itemSlotPrefab;
     [SerializeField] private ItemInfoPanel infoPanel;
     [SerializeField] private ShopKeeper shopKeeper;
+    [SerializeField] private TMP_Text goldtext;
 
     [Header("#Shop Items")]
     [SerializeField] private List<WeaponData> weapons = new List<WeaponData>();
@@ -16,6 +18,7 @@ public class StoreManager : MonoBehaviour
     private void Start()
     {
         CreateItemSlots();
+        UpdateGoldUI();
     }
 
     private void CreateItemSlots()
@@ -41,10 +44,14 @@ public class StoreManager : MonoBehaviour
         }
 
         InventoryManager.Instance.AddItem(item);
+        UpdateGoldUI();
         shopKeeper.ShowMessage("좋은 물건을 골랐네!\n잘 쓰게!");
         Debug.Log(item.name + " 구매");
 
         return true;
     }
-
+    private void UpdateGoldUI()
+    {
+        goldtext.text = moneyManager.Instance.Gold + "G";
+    }
 }

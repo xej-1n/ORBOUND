@@ -1221,6 +1221,7 @@ MonoBehaviour:
   itemSlotPrefab: {fileID: 934312341344384825, guid: 53952ff0e5713b6479945836c1a6c5f1, type: 3}
   infoPanel: {fileID: 2139015459}
   shopKeeper: {fileID: 715220004}
+  goldtext: {fileID: 696846008}
   weapons:
   - {fileID: 11400000, guid: d1c3ff906f008e544b842b0d699650a1, type: 2}
   - {fileID: 11400000, guid: 92205cbbfa913ce4d96a2df7b728ec39, type: 2}
@@ -1561,52 +1562,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &1256114832
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1256114834}
-  - component: {fileID: 1256114833}
-  m_Layer: 0
-  m_Name: MoneyManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1256114833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1256114832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30276627aa1e67d4e99ae0d0fa64692e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gold: 100
-  goldText: {fileID: 696846008}
---- !u!4 &1256114834
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1256114832}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1051.8649, y: 604.55994, z: -5.1174016}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1319202926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2330,8 +2285,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1998627532}
   - component: {fileID: 1998627531}
+  - component: {fileID: 1998627533}
   m_Layer: 0
-  m_Name: Inventory Manager
+  m_Name: (if build distroy this)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2366,6 +2322,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1998627533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998627530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30276627aa1e67d4e99ae0d0fa64692e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gold: 100
 --- !u!1 &2139015455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,6 +2412,5 @@ SceneRoots:
   - {fileID: 122741312}
   - {fileID: 715220003}
   - {fileID: 1998627532}
-  - {fileID: 1256114834}
   - {fileID: 219551432}
   - {fileID: 392231963}

@@ -5,9 +5,7 @@ public class moneyManager : MonoBehaviour
 {
     public static moneyManager Instance { get; private set; }
 
-    [SerializeField] private int gold = 1000;
-    [SerializeField] private TMP_Text goldText;
-
+    [SerializeField] private int gold = 0;
     public int Gold => gold;
 
     private void Awake()
@@ -22,12 +20,6 @@ public class moneyManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    private void Start()
-    {
-        UpdateGoldUI();
-    }
-
     public bool CanAfford(int price)
     {
         return gold >= price;
@@ -38,7 +30,6 @@ public class moneyManager : MonoBehaviour
         if (!CanAfford(price)) return false;
 
         gold -= price;
-        UpdateGoldUI();
         return true;
     }
 
@@ -47,11 +38,5 @@ public class moneyManager : MonoBehaviour
         if (amount <= 0) return;
 
         gold += amount;
-        UpdateGoldUI();
-    }
-
-    private void UpdateGoldUI()
-    {
-        goldText.text = gold + "G";
     }
 }
