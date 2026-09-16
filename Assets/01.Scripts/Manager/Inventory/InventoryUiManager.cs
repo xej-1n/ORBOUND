@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class InventoryUiManager : MonoBehaviour
 {
     [SerializeField] private Transform content;
@@ -8,11 +8,13 @@ public class InventoryUiManager : MonoBehaviour
     [SerializeField] private Image attackEquipmentIcon;
     [SerializeField] private Image shieldEquipmentIcon;
     [SerializeField] private invenItemInfoPannel infoPanel;
+    [SerializeField] private TMP_Text goldtext;
 
     private void Start()
     {
         CreateItemSlots();
         UpdateEquipmentUI();
+        UpdateGoldUI();
     }
     public void RefreshInventory()
     {
@@ -41,6 +43,10 @@ public class InventoryUiManager : MonoBehaviour
             ItemSlot slot = Instantiate(itemSlotPrefab, content);
             slot.SetInventoryItem(shield, this, infoPanel);
         }
+    }
+    private void UpdateGoldUI()
+    {
+        goldtext.text = moneyManager.Instance.Gold + "G";
     }
     private void UpdateEquipmentUI()
     {

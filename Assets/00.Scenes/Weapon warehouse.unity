@@ -2467,8 +2467,9 @@ GameObject:
   - component: {fileID: 2101722141}
   - component: {fileID: 2101722140}
   - component: {fileID: 2101722142}
+  - component: {fileID: 2101722143}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: (if build distroy this)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2526,6 +2527,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equippedWeapon: {fileID: 0}
   equippedShield: {fileID: 0}
+--- !u!114 &2101722143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101722139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30276627aa1e67d4e99ae0d0fa64692e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gold: 0
 --- !u!1 &2139354513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,6 +2639,7 @@ MonoBehaviour:
   attackEquipmentIcon: {fileID: 813930070}
   shieldEquipmentIcon: {fileID: 44453513}
   infoPanel: {fileID: 120171472}
+  goldtext: {fileID: 554174932}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
