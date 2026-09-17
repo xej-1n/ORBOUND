@@ -12,6 +12,7 @@ public class StageManager : MonoBehaviour
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private Player player;
     [SerializeField] private Enemy enemyPrefab;
+    [SerializeField] private ScoreManager scoreManager;
 
     private Enemy[] enemies;
 
@@ -42,7 +43,7 @@ public class StageManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         while (true)
         {
-            int damage = 200;
+            int damage = scoreManager.Damage;
             //핀볼 해야함(임시 데미지 50으로 계산)
 
             for (int i = 0; i < currentStage.Enemies.Count; i++)

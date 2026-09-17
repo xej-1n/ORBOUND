@@ -14,6 +14,8 @@ public class ScoreManager : MonoBehaviour
     private bool hasGotAllHitBonus = false;
     private List<PegType> hitPegs = new List<PegType>();
 
+    public int Damage { get; private set; }
+
     void Awake() { instance = this; }
 
     void Update()
@@ -83,10 +85,10 @@ public class ScoreManager : MonoBehaviour
 
   
         float multiplier = GetMultiplier(totalScore);
-        int damage = Mathf.FloorToInt((totalScore / 2f) * multiplier);
+        Damage = Mathf.FloorToInt((totalScore / 2f) * multiplier);
 
 
-        Debug.Log("턴 종료! 최종 점수: " + totalScore + " / 몬스터에게 줄 데미지: " + damage);
+        Debug.Log("턴 종료! 최종 점수: " + totalScore + " / 몬스터에게 줄 데미지: " + Damage);
     }
 
 

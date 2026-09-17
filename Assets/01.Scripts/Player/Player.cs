@@ -11,7 +11,6 @@ public class Player : MonoBehaviour
     public Slider _hpSlider;
     public WeaponData _weapon;
     public ShieldData _shield;
-
     private void Start()
     {
         _hp = _maxHp;
@@ -25,7 +24,6 @@ public class Player : MonoBehaviour
             pinAtk += (int)_weapon.BonusDamage;
         }
         //공격무기 효과 추가 및 방어력 무시 추가해야함
-
         _animator.SetTrigger("onAttack");
         target.Damage(pinAtk);
     }
@@ -48,9 +46,7 @@ public class Player : MonoBehaviour
             _spriteRenderer.DOKill();
             _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
             _hpSlider.value = (float)_hp / _maxHp;
-            
         }
-
         if (_hp <= 0)
         {
             _animator.SetBool("isDead", true);

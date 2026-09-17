@@ -14,7 +14,6 @@ public class Enemy : MonoBehaviour
             return Random.Range(_enemyData.MinAttack, _enemyData.MaxAttack+1);
         }
     }
-
     public void Attack(Player target)
     {
         _animator.SetTrigger("onAttack");
@@ -31,7 +30,6 @@ public class Enemy : MonoBehaviour
             _spriteRenderer.DOKill();
             _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
         }
-
         if(_hp <= 0)
         {
             _animator.SetBool("isDead", true);
