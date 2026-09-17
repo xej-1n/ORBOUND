@@ -55,6 +55,14 @@ public class InventoryUiManager : MonoBehaviour
 
         attackEquipmentIcon.sprite = weapon != null ? weapon.Icon : null;
         shieldEquipmentIcon.sprite = shield != null ? shield.Icon : null;
+
+        Color attackColor = attackEquipmentIcon.color;
+        attackColor.a = weapon != null ? 1f : 0f;
+        attackEquipmentIcon.color = attackColor;
+
+        Color shieldColor = shieldEquipmentIcon.color;
+        shieldColor.a = shield != null ? 1f : 0f;
+        shieldEquipmentIcon.color = shieldColor;
     }
     public void EquipItem(ShopItemData item)
     {
