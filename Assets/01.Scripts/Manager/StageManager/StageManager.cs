@@ -44,7 +44,6 @@ public class StageManager : MonoBehaviour
         while (true)
         {
             int damage = scoreManager.Damage;
-            //핀볼 해야함(임시 데미지 50으로 계산)
 
             for (int i = 0; i < currentStage.Enemies.Count; i++)
             {
