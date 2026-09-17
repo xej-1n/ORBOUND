@@ -530,7 +530,7 @@ GameObject:
   - component: {fileID: 518361100}
   - component: {fileID: 518361099}
   m_Layer: 0
-  m_Name: greenbackground_0
+  m_Name: greenbackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1075,7 +1075,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.5249548, y: 0}
+  m_Offset: {x: 5.7367105, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1085,7 +1085,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 6.9557476, y: 1}
+  m_Size: {x: 17.379255, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &1387364394
 Transform:
@@ -1200,7 +1200,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.6205754, y: 0}
+  m_Offset: {x: 5.606764, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1210,7 +1210,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.911952, y: 1}
+  m_Size: {x: 17.884329, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &1544758862
 Transform:
