@@ -1,14 +1,18 @@
 using System;
 using System.Collections;
-using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StageManager : MonoBehaviour
 {
+    public static StageManager Instance { get; private set; }
+    public event Action<int> OnTurnStart;
+    public event Action OnTurnEnd;
+    public event Action OnBattleEnd;
+
     [SerializeField] private StageData[] stageData;
     private StageData currentStage;
+
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private Player player;
     [SerializeField] private Enemy enemyPrefab;
@@ -16,6 +20,10 @@ public class StageManager : MonoBehaviour
 
     private Enemy[] enemies;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -32,22 +40,35 @@ public class StageManager : MonoBehaviour
             EnemyData enemyData = currentStage.Enemies[i];
 
             enemies[i] = Instantiate(enemyPrefab, spawnPoints[i].position, Quaternion.identity);
+
             if (enemies[i] != null)
                 enemies[i]._enemyData = enemyData;
         }
 
         StartCoroutine(RunPlayTrun());
     }
+
+    public Enemy[] GetEnemies()
+    {
+        return enemies;
+    }
+
     public IEnumerator RunPlayTrun()
     {
         yield return new WaitForSeconds(1f);
+
+        int turn = 0;
+
         while (true)
         {
+            turn++;
+            OnTurnStart?.Invoke(turn);
+
             int damage = scoreManager.Damage;
 
-            for (int i = 0; i < currentStage.Enemies.Count; i++)
+            for (int i = 0; i < enemies.Length; i++)
             {
-                if (enemies[i]._hp > 0)
+                if (enemies[i] != null && enemies[i]._hp > 0)
                 {
                     player.Attack(enemies[i], damage);
                     break;
@@ -55,32 +76,39 @@ public class StageManager : MonoBehaviour
             }
 
             bool enemyAllDead = true;
-            for(int i = 0; i < currentStage.Enemies.Count; i++)
+
+            for (int i = 0; i < enemies.Length; i++)
             {
-                if (enemies[i]._hp > 0)
+                if (enemies[i] != null && enemies[i]._hp > 0)
                 {
                     enemyAllDead = false;
                     break;
                 }
             }
-            if(enemyAllDead)
+
+            if (enemyAllDead)
             {
+                OnBattleEnd?.Invoke();
                 Clear();
-                break; 
+                break;
             }
 
             yield return new WaitForSeconds(3f);
 
-            for (int i = 0; i < currentStage.Enemies.Count; i++)
+            for (int i = 0; i < enemies.Length; i++)
             {
-                if (enemies[i]._hp > 0)
+                if (enemies[i] != null && enemies[i]._hp > 0)
                 {
                     enemies[i].Attack(player);
                     yield return new WaitForSeconds(1f);
                 }
             }
+
+            OnTurnEnd?.Invoke();
+
             if (player._hp <= 0)
             {
+                OnBattleEnd?.Invoke();
                 Gameover();
                 break;
             }
@@ -90,7 +118,8 @@ public class StageManager : MonoBehaviour
     private void Clear()
     {
         int currentLv = 0;
-        for(int i = 0;i < stageData.Length; i++)
+
+        for (int i = 0; i < stageData.Length; i++)
         {
             if (stageData[i] == currentStage)
             {
@@ -98,8 +127,10 @@ public class StageManager : MonoBehaviour
                 break;
             }
         }
+
         int nextLv = currentLv + 1;
-        if(nextLv >= stageData.Length)
+
+        if (nextLv >= stageData.Length)
         {
             int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             SceneManager.LoadScene(nextSceneIndex);

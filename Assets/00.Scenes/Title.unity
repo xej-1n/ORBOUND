@@ -1013,16 +1013,16 @@ MonoBehaviour:
   ballPrefab: {fileID: 2824865343425898717, guid: 17b8b856bb2da4a4a8694ff42877615e, type: 3}
   spawnArea: {fileID: 1387364393}
   ballSprites:
-  - {fileID: 2063826154672905881, guid: b064f898fa6884e4f9cb5dfb02e4d59f, type: 3}
-  - {fileID: -1593477784551811952, guid: e326d50885e5a0049ab5815fb6275076, type: 3}
-  - {fileID: -6099873399732076034, guid: 90d6ebd0037359444b722fc348abc9dc, type: 3}
-  - {fileID: -6410442598547967069, guid: fa4960d1f3bce224284d29af3bc1b474, type: 3}
-  - {fileID: -6920274672158514710, guid: e0c4f018b742d6246908d0dcc4524daf, type: 3}
-  - {fileID: -2093324750932669864, guid: e3d4282012bb4cc44afd3fec7130c4bb, type: 3}
-  - {fileID: 8166710274925509176, guid: 1211a173cbb89cc48be0b71da4ca42d4, type: 3}
-  - {fileID: -4219490322882848277, guid: 254e3ba6138126943813c0ac3d005f94, type: 3}
-  - {fileID: 4966732595609684114, guid: 1e0dd5650f30ccd40a102844672de940, type: 3}
-  - {fileID: -8425141836431729757, guid: b349adce5ba9c3146bf8d069a1f29892, type: 3}
+  - {fileID: 8352966134762731277, guid: 9ff6060d1e716944fa0e23a26063bce8, type: 3}
+  - {fileID: -1600412139, guid: 9ff6060d1e716944fa0e23a26063bce8, type: 3}
+  - {fileID: -501923306, guid: 9ff6060d1e716944fa0e23a26063bce8, type: 3}
+  - {fileID: 1579395638, guid: 9ff6060d1e716944fa0e23a26063bce8, type: 3}
+  - {fileID: 1941884104, guid: 9ff6060d1e716944fa0e23a26063bce8, type: 3}
+  - {fileID: -1708746719, guid: 9ff6060d1e716944fa0e23a26063bce8, type: 3}
+  - {fileID: 311943049, guid: 9ff6060d1e716944fa0e23a26063bce8, type: 3}
+  - {fileID: 1079723486, guid: 9ff6060d1e716944fa0e23a26063bce8, type: 3}
+  - {fileID: -925551091, guid: 9ff6060d1e716944fa0e23a26063bce8, type: 3}
+  - {fileID: 2061786376, guid: 9ff6060d1e716944fa0e23a26063bce8, type: 3}
   spawnInterval: 0.5
 --- !u!1 &1387364392
 GameObject:
