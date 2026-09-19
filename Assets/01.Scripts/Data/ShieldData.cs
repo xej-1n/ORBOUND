@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public enum ShieldType { Basic, Reflect, Regeneration, Explosion, Charge, Emergency, Barrier, Lifesteal, Impact, LastStand }
+public enum ShieldType
+{
+    Basic,Reflect,Regeneration,Explosion,Charge,Emergency,Barrier,Lifesteal
+}
 
 [CreateAssetMenu(fileName = "ShieldData", menuName = "ORBBOUND/Shield Data")]
 public class ShieldData : ShopItemData
@@ -11,16 +14,29 @@ public class ShieldData : ShopItemData
     public Sprite Icon;
     public ShieldType Type;
 
-    [Header("#Shield")]
-    public float ShieldAmount;
-    public float DamageReduction;
+    [Header("#내구도")]
+    [Min(0)] public int Durability;
+    [Range(0f, 100f)] public float DamageReduction;
 
-    [Header("#Special")]
-    public float ReflectPercent; // 반사
-    public float RegenerationAmount; // 재생
-    public float ExplosionDamage; // 폭발
-    public float ChargeBonusDamage; // 충전
-    public float EmergencyThreshold; // 응급
-    public int BarrierCount; // 보호막
-    public float LifestealPercent; // 흡혈
+    [Header("#반사율")]
+    [Range(0f, 1f)] public float ReflectPercent;
+
+    [Header("#재생")]
+    [Min(0)] public int RegenerationAmount;
+
+    [Header("#폭팔")]
+    [Min(0)] public int ExplosionDamage;
+
+    [Header("#충전")]
+    [Min(0)] public int ChargeBonusDamage;
+
+    [Header("#응급")]
+    [Range(0f, 1f)] public float EmergencyThreshold;
+    [Min(0)] public int EmergencyDurability;
+
+    [Header("#보호막")]
+    [Min(0)] public int BarrierCount;
+
+    [Header("#흡혈")]
+    [Range(0f, 1f)] public float LifestealPercent;
 }

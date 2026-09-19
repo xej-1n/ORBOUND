@@ -1,6 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class Player : MonoBehaviour
 {
     public Animator _animator;
@@ -9,47 +10,139 @@ public class Player : MonoBehaviour
     public SpriteRenderer _spriteRenderer;
     public int _defense;
     public Slider _hpSlider;
+
     public WeaponData _weapon;
     public ShieldData _shield;
+
+    [SerializeField] private WeaponEffect _weaponEffect;
+    [SerializeField] private ShieldEffect _shieldEffect;
+
     private void Start()
     {
         _hp = _maxHp;
+        _hpSlider.value = 1f;
+
+        if (_shieldEffect != null)
+            _shieldEffect.SetShield(_shield);
+
+        if (StageManager.Instance != null)
+        {
+            StageManager.Instance.OnTurnStart += HandleTurnStart;
+            StageManager.Instance.OnBattleEnd += HandleBattleEnd;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (StageManager.Instance == null)
+            return;
+
+        StageManager.Instance.OnTurnStart -= HandleTurnStart;
+        StageManager.Instance.OnBattleEnd -= HandleBattleEnd;
     }
 
     public void Attack(Enemy target, int pinAtk)
     {
-        if (_weapon != null)
-        {
-            pinAtk = (int)(pinAtk * _weapon.DamageMultiplier);
-            pinAtk += (int)_weapon.BonusDamage;
-        }
-        //공격무기 효과 추가 및 방어력 무시 추가해야함
+        if (target == null || pinAtk <= 0)
+            return;
+
         _animator.SetTrigger("onAttack");
-        target.Damage(pinAtk);
+
+        if (_shieldEffect != null)
+            pinAtk += _shieldEffect.GetChargeBonus();
+
+        if (_shieldEffect != null)
+            _shieldEffect.BeginPlayerAttack();
+
+        Enemy[] enemies = StageManager.Instance != null ? StageManager.Instance.GetEnemies() : null;
+
+        int[] beforeHp = null;
+
+        if (enemies != null)
+        {
+            beforeHp = new int[enemies.Length];
+
+            for (int i = 0; i < enemies.Length; i++)
+                beforeHp[i] = enemies[i] != null ? enemies[i]._hp : 0;
+        }
+
+        if (_weapon != null)
+            _weaponEffect.Apply(this, target, pinAtk, _weapon);
+        else
+            target.Damage(pinAtk);
+
+        if (_shieldEffect != null && enemies != null && beforeHp != null)
+        {
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                if (enemies[i] == null)
+                    continue;
+
+                int actualDamage = Mathf.Max(0, beforeHp[i] - enemies[i]._hp);
+                _shieldEffect.AddDirectDamage(actualDamage);
+            }
+
+            _shieldEffect.EndPlayerAttack(this);
+        }
     }
+
+    public void Damage(Enemy attacker, int enemyAtk)
+    {
+        int damage = enemyAtk;
+
+        if (_shieldEffect != null)
+            damage = _shieldEffect.Apply(this, attacker, enemyAtk);
+
+        if (damage <= 0)
+            return;
+
+        _hp -= damage;
+        _hp = Mathf.Max(0, _hp);
+
+        _spriteRenderer.DOKill();
+        _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
+
+        _hpSlider.value = (float)_hp / _maxHp;
+
+        if (_hp <= 0)
+            _animator.SetBool("isDead", true);
+    }
+
     public void Damage(int enemyAtk)
     {
-        int defense = _defense;
-        if (_shield != null)
-            defense += (int)_shield.ShieldAmount;
+        Damage(null, enemyAtk);
+    }
 
-        int temp;
-        temp = enemyAtk - defense;
-        if(_shield != null)
-        {
-            temp = (int)(temp * (100 - _shield.DamageReduction) / 100);
-        }
-        // 실드 효과 추가해야함
-        if (temp > 0)
-        {
-            _hp -= temp;
-            _spriteRenderer.DOKill();
-            _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
-            _hpSlider.value = (float)_hp / _maxHp;
-        }
-        if (_hp <= 0)
-        {
-            _animator.SetBool("isDead", true);
-        }
+    public void Heal(int amount)
+    {
+        if (amount <= 0)
+            return;
+
+        _hp = Mathf.Min(_hp + amount, _maxHp);
+        _hpSlider.value = (float)_hp / _maxHp;
+    }
+
+    private void HandleTurnStart(int turn)
+    {
+        if (_shieldEffect != null)
+            _shieldEffect.OnTurnStart(this, turn);
+    }
+
+    private void HandleBattleEnd()
+    {
+        if (_shieldEffect != null)
+            _shieldEffect.OnBattleEnd();
+    }
+
+    public void BeginEnemyAction()
+    {
+        if (_shieldEffect != null)
+            _shieldEffect.BeginEnemyAction();
+    }
+
+    public void EndEnemyAction()
+    {
+        if (_shieldEffect != null)
+            _shieldEffect.EndEnemyAction();
     }
 }
