@@ -16,7 +16,6 @@ public class StageManager : MonoBehaviour
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private Player player;
     [SerializeField] private Enemy enemyPrefab;
-    [SerializeField] private ScoreManager scoreManager;
 
     private Enemy[] enemies;
 
@@ -64,7 +63,7 @@ public class StageManager : MonoBehaviour
             turn++;
             OnTurnStart?.Invoke(turn);
 
-            int damage = scoreManager.Damage;
+            int damage = ScoreManager.instance.Damage;
 
             for (int i = 0; i < enemies.Length; i++)
             {
