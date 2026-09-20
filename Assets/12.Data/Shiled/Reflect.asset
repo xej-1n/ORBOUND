@@ -12,17 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95e91b0b80d57604c9e1dd36f4ae81ca, type: 3}
   m_Name: Reflect
   m_EditorClassIdentifier: 
+  Price: 60
   ShieldName: "\uBC18\uC0AC \uBC29\uD328"
   Description: "\uBC1B\uC740 \uD53C\uD574\uC758 \uC77C\uBD80\uB97C \n\uACF5\uACA9\uD55C
     \uC801\uC5D0\uAC8C \uBC18\uC0AC\uD569\uB2C8\uB2E4."
   Icon: {fileID: 21300000, guid: 42caf35a20955464f81374e7bbb5f276, type: 3}
   Type: 1
-  ShieldAmount: 50
+  Durability: 50
   DamageReduction: 5
-  ReflectPercent: 30
+  ReflectPercent: 0.3
   RegenerationAmount: 0
   ExplosionDamage: 0
   ChargeBonusDamage: 0
   EmergencyThreshold: 0
+  EmergencyDurability: 0
   BarrierCount: 0
   LifestealPercent: 0

@@ -12,16 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95e91b0b80d57604c9e1dd36f4ae81ca, type: 3}
   m_Name: Regeneration
   m_EditorClassIdentifier: 
+  Price: 110
   ShieldName: "\uC7AC\uC0DD \uBC29\uD328"
   Description: "\uD134 \uC885\uB8CC \uC2DC \uBC29\uD328\uC758 \uCCB4\uB825\uC744\n\uD68C\uBCF5\uD569\uB2C8\uB2E4."
   Icon: {fileID: 21300000, guid: 13297f56fcd934d80a25c48c557563e6, type: 3}
   Type: 2
-  ShieldAmount: 40
+  Durability: 40
   DamageReduction: 5
   ReflectPercent: 0
-  RegenerationAmount: 10
+  RegenerationAmount: 8
   ExplosionDamage: 0
   ChargeBonusDamage: 0
   EmergencyThreshold: 0
+  EmergencyDurability: 0
   BarrierCount: 0
   LifestealPercent: 0

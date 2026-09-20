@@ -170,6 +170,8 @@ GameObject:
   - component: {fileID: 317770877}
   - component: {fileID: 317770879}
   - component: {fileID: 317770880}
+  - component: {fileID: 317770882}
+  - component: {fileID: 317770881}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -267,6 +269,8 @@ MonoBehaviour:
   _hpSlider: {fileID: 1270710185}
   _weapon: {fileID: 0}
   _shield: {fileID: 0}
+  _weaponEffect: {fileID: 317770881}
+  _shieldEffect: {fileID: 317770882}
 --- !u!95 &317770880
 Animator:
   serializedVersion: 7
@@ -289,6 +293,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &317770881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317770875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0391b4bc5033d564da057810931c5e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &317770882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317770875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4029c6f1f325b40866741f1bde8381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &339323690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,6 +1491,7 @@ MonoBehaviour:
   - {fileID: 382772479}
   player: {fileID: 317770879}
   enemyPrefab: {fileID: 7260119031911388657, guid: 602ce3d1b2876344a9b96d0286e4414e, type: 3}
+  scoreManager: {fileID: 0}
 --- !u!4 &1293932565
 Transform:
   m_ObjectHideFlags: 0
