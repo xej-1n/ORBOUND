@@ -54,4 +54,8 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene("Weapon warehouse");
     }
+    public void Home()
+    {
+
+    }
 }
