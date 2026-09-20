@@ -63,6 +63,12 @@ public class StageManager : MonoBehaviour
             turn++;
             OnTurnStart?.Invoke(turn);
 
+            ScoreManager.instance.Ready();
+            while (ScoreManager.instance.isPlaying)
+            {
+                yield return new WaitForEndOfFrame();
+            }
+
             int damage = ScoreManager.instance.Damage;
 
             for (int i = 0; i < enemies.Length; i++)

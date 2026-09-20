@@ -7,7 +7,15 @@ public class ScoreManager : MonoBehaviour
     public int totalScore = 0;
     private float turnTimer = 10f;
     private bool isTurnActive = false;
+    public bool isPlaying
+    {
+        get
+        {
+            return _ball.activeSelf;
+        }
+    }
 
+    [SerializeField] GameObject _ball;
 
     private float lastBottomHitTime = -100f;
     private int comboCount = 0;
@@ -18,6 +26,11 @@ public class ScoreManager : MonoBehaviour
 
     void Awake() { instance = this; }
 
+    void Start()
+    {
+        _ball.SetActive(false);
+    }
+
     void Update()
     {
         if (isTurnActive)
@@ -25,6 +38,11 @@ public class ScoreManager : MonoBehaviour
             turnTimer -= Time.deltaTime;
             if (turnTimer <= 0) EndTurn();
         }
+    }
+
+    public void Ready()
+    {
+        _ball.SetActive(true);
     }
 
     public void StartTurn()
@@ -86,6 +104,8 @@ public class ScoreManager : MonoBehaviour
   
         float multiplier = GetMultiplier(totalScore);
         Damage = Mathf.FloorToInt((totalScore / 2f) * multiplier);
+
+        _ball.SetActive(false);
 
 
         Debug.Log("턴 종료! 최종 점수: " + totalScore + " / 몬스터에게 줄 데미지: " + Damage);

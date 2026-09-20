@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 317770879}
   - component: {fileID: 317770882}
   - component: {fileID: 317770881}
+  - component: {fileID: 317770883}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -221,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38f0362953ba1104091d1c8885344152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 0}
+  _animator: {fileID: 317770883}
   _maxHp: 100
   _hp: 0
   _spriteRenderer: {fileID: 317770877}
@@ -255,6 +256,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4029c6f1f325b40866741f1bde8381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &317770883
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317770875}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a14cfbb550aee94784bc3508dd036c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &339323690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,6 +1059,10 @@ PrefabInstance:
     - target: {fileID: 1140093670331086467, guid: aca89b9e8e548d246a84935598d9933f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8411120040797381383, guid: aca89b9e8e548d246a84935598d9933f, type: 3}
+      propertyPath: hitStrength
+      value: -10000
       objectReference: {fileID: 0}
     - target: {fileID: 9115050087343019151, guid: aca89b9e8e548d246a84935598d9933f, type: 3}
       propertyPath: m_Name
