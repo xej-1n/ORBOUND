@@ -19,6 +19,8 @@ public class ItemSlot : MonoBehaviour
     {
         itemName.text = name;
         icon.sprite = sprite;
+        icon.color = InventoryManager.Instance.HasItem(data) ? Color.gray : Color.white;
+
         description = desc;
         infoPanel = panel;
         itemData = data;

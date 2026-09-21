@@ -26,7 +26,12 @@ public class StageManager : MonoBehaviour
 
     private void Start()
     {
-        LoadStage(stageData[0]);
+        int stageIndex = GameSaveManager.Instance.CurrentStageIndex;
+
+        if (stageIndex >= 0 && stageIndex < stageData.Length)
+            LoadStage(stageData[stageIndex]);
+        else
+            LoadStage(stageData[0]);
     }
 
     public void LoadStage(StageData stageData)
@@ -43,10 +48,21 @@ public class StageManager : MonoBehaviour
             if (enemies[i] != null)
                 enemies[i]._enemyData = enemyData;
         }
+        SaveCurrentStage();
 
         StartCoroutine(RunPlayTrun());
     }
-
+    private void SaveCurrentStage()
+    {
+        for (int i = 0; i < stageData.Length; i++)
+        {
+            if (stageData[i] == currentStage)
+            {
+                GameSaveManager.Instance.SetStage(i);
+                break;
+            }
+        }
+    }
     public Enemy[] GetEnemies()
     {
         return enemies;
@@ -138,16 +154,21 @@ public class StageManager : MonoBehaviour
         if (nextLv >= stageData.Length)
         {
             int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+
+            GameSaveManager.Instance.SetStage(nextSceneIndex);
+
             SceneManager.LoadScene(nextSceneIndex);
         }
         else
         {
+            GameSaveManager.Instance.SetStage(nextLv);
             LoadStage(stageData[nextLv]);
         }
     }
 
     private void Gameover()
     {
+        GameSaveManager.Instance.DeleteSave();
         SceneManager.LoadScene("Title");
     }
 }

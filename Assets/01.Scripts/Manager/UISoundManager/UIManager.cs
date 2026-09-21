@@ -48,10 +48,13 @@ public class UIManager : MonoBehaviour
 
     public void Store()
     {
+        GameSaveManager.Instance.SetPreviousScene(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("Store");
     }
+
     public void Setup()
     {
+        GameSaveManager.Instance.SetPreviousScene(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("Weapon warehouse");
     }
     public void Home()

@@ -39,4 +39,8 @@ public class moneyManager : MonoBehaviour
 
         gold += amount;
     }
+    public void SetGold(int amount)
+    {
+        gold = Mathf.Max(0, amount);
+    }
 }
