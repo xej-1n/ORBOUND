@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public SpriteRenderer _spriteRenderer;
     public EnemyData _enemyData;
     public int _hp = 0;
+    private bool _rewardGiven;
 
     public int _getAttack
     {
@@ -41,8 +42,15 @@ public class Enemy : MonoBehaviour
         _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
 
         if (_hp <= 0)
+        {
             _animator.SetBool("isDead", true);
 
+            if (!_rewardGiven)
+            {
+                _rewardGiven = true;
+                moneyManager.Instance.AddGold(_enemyData.RewardGold);
+            }
+        }
         return actualDamage;
     }
     public int FixedDamage(int damage)
@@ -58,8 +66,15 @@ public class Enemy : MonoBehaviour
         _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
 
         if (_hp <= 0)
+        {
             _animator.SetBool("isDead", true);
 
+            if (!_rewardGiven)
+            {
+                _rewardGiven = true;
+                moneyManager.Instance.AddGold(_enemyData.RewardGold);
+            }
+        }
         return actualDamage;
     }
 }
