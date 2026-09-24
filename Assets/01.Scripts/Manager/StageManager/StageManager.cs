@@ -120,8 +120,7 @@ public class StageManager : MonoBehaviour
             {
                 if (enemies[i] != null && enemies[i]._hp > 0)
                 {
-                    enemies[i].Attack(player);
-                    yield return new WaitForSeconds(1f);
+                    yield return enemies[i].Turn(player);
                 }
             }
 
