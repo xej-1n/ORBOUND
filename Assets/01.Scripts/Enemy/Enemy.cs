@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
             {
                 Crusher(target);
                 canAttack = false;
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(2f);
             }
             if(_crusherDelay >= 0)
             {
@@ -65,8 +65,9 @@ public class Enemy : MonoBehaviour
 
         if (canAttack)
         {
+            MessageManager.instance.Open($"{_enemyData.EnemyName}의 공격", 1f);
             Attack(target);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(2f);
         }
 
         if(_enemyData.BossType == BossType.WaterBarrier)
@@ -136,6 +137,7 @@ public class Enemy : MonoBehaviour
     private void CrusherReady(Player target)
     {
         _crusherReady = true;
+        MessageManager.instance.Open($"{_enemyData.EnemyName}의 분쇄 강타 준비!", 1f);
         Debug.Log($"{_enemyData.EnemyName} : 분쇄 강타 준비!");
 
         _spriteRenderer.DOKill();
@@ -146,6 +148,7 @@ public class Enemy : MonoBehaviour
     {
         _crusherReady = false;
         _crusherDelay = 3;
+        MessageManager.instance.Open($"{_enemyData.EnemyName}의 분쇄 강타!", 1f);
         Debug.Log($"{_enemyData.EnemyName} : 분쇄 강타!");
 
         _spriteRenderer.DOKill();
@@ -164,6 +167,7 @@ public class Enemy : MonoBehaviour
 
         _spriteRenderer.DOKill();
         _spriteRenderer.DOColor(Color.blue, 0.05f).SetLoops(6, LoopType.Yoyo);
+        MessageManager.instance.Open($"{_enemyData.EnemyName}의 수압 방벽!", 1f);
         Debug.Log($"{_enemyData.EnemyName} : 수압 방벽! 60 방벽 생성");
     }
 
@@ -175,6 +179,7 @@ public class Enemy : MonoBehaviour
     private void ShadowChase(Player target)
     {
         Debug.Log($"{_enemyData.EnemyName} : 그림자 추격! 추가 피해 8");
+        MessageManager.instance.Open($"{_enemyData.EnemyName}의 그림자 추격!", 1f);
         _spriteRenderer.DOKill();
         _spriteRenderer.DOColor(Color.yellow, 0.1f).SetLoops(2, LoopType.Yoyo);
         target.Damage(this, 8);

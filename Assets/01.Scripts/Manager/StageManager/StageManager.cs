@@ -79,12 +79,14 @@ public class StageManager : MonoBehaviour
             turn++;
             OnTurnStart?.Invoke(turn);
 
+            MessageManager.instance.Open("플레이어의 턴", 1f);
             ScoreManager.instance.Ready();
             while (ScoreManager.instance.isPlaying)
             {
                 yield return new WaitForEndOfFrame();
             }
 
+            MessageManager.instance.Open("플레이어의 공격", 1f);
             int damage = ScoreManager.instance.Damage;
 
             for (int i = 0; i < enemies.Length; i++)
