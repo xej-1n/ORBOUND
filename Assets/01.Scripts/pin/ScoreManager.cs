@@ -6,7 +6,7 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance;
     public int totalScore = 0;
     private float turnTimer = 10f;
-    private bool isTurnActive = false;
+    public bool isTurnActive = false;
     public bool isPlaying
     {
         get

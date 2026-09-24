@@ -26,6 +26,9 @@ public class DragAndShoot : MonoBehaviour
 
     void OnMouseDown()
     {
+        if (ScoreManager.instance.isTurnActive)
+            return;
+
         isDragging = true;
         currentChargeTime = 0f;
         startPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
