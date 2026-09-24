@@ -2,7 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public SpriteRenderer _spriteRenderer;
     public EnemyData _enemyData;
     public int _hp = 0;
+    public Slider _hpSlider;
     private bool _rewardGiven;
 
     public int _getAttack
@@ -22,6 +23,13 @@ public class Enemy : MonoBehaviour
         _hp = _enemyData.MaxHP;
         _animator.runtimeAnimatorController = _enemyData.animatorController;
         _spriteRenderer.flipX = _enemyData.isFlip;
+        _hpSlider.maxValue = _enemyData.MaxHP;
+        _hpSlider.value = _hp;
+    }
+
+    public void Update()
+    {
+        _hpSlider.value = _hp;
     }
 
     public IEnumerator Turn(Player target)
