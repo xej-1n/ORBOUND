@@ -18,19 +18,11 @@ public class EnemyData : ScriptableObject
 
     [Header("그외")]
     public int RewardGold;
-    public GameObject Prefab;
     public RuntimeAnimatorController animatorController;
     public bool isFlip;
+    public int scale = 1;
 
     [Header("Boss")]
     public bool IsBoss;
     public BossType BossType;
-
-    private void OnValidate()
-    {
-        if (Prefab != null)
-        {
-            name = Prefab.name;
-        }
-    }
 }

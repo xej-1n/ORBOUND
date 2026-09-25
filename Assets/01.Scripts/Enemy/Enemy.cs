@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
         _hp = _enemyData.MaxHP;
         _animator.runtimeAnimatorController = _enemyData.animatorController;
         _spriteRenderer.flipX = _enemyData.isFlip;
+        _spriteRenderer.transform.localScale = new Vector3(_enemyData.scale, _enemyData.scale, 1f);
         _hpSlider.maxValue = _enemyData.MaxHP;
         _hpSlider.value = _hp;
     }
