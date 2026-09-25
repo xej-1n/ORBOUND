@@ -66,8 +66,9 @@ public class Enemy : MonoBehaviour
         if (canAttack)
         {
             MessageManager.instance.Open($"{_enemyData.EnemyName}의 공격", 1f);
+            yield return new WaitForSeconds(1f);
             Attack(target);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
         }
 
         if(_enemyData.BossType == BossType.WaterBarrier)
