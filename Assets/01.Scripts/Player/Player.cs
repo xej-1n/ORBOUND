@@ -14,16 +14,45 @@ public class Player : MonoBehaviour
     [SerializeField] private WeaponEffect _weaponEffect;
     [SerializeField] private ShieldEffect _shieldEffect;
 
+    [SerializeField] private Image _weaponIcon;
+    [SerializeField] private Image _shieldIcon;
+
     private void Start()
     {
         _hp = _maxHp;
         _hpSlider.value = 1f;
 
         if(_weaponEffect != null)
-            _weaponEffect.SetWeapon(EquipManager.Instance.GetEquippedWeapon());
+        {
+            WeaponData equippedWeapon = EquipManager.Instance.GetEquippedWeapon();
+            _weaponEffect.SetWeapon(equippedWeapon);
+            if(equippedWeapon != null)
+            {
+                _weaponIcon.enabled = true;
+                _weaponIcon.sprite = equippedWeapon.Icon;
+            }
+            else
+            {
+                _weaponIcon.enabled = false;
+                _weaponIcon.sprite = null;
+            }
+        }
 
         if (_shieldEffect != null)
-            _shieldEffect.SetShield(EquipManager.Instance.GetEquippedShield());
+        {
+            ShieldData equippedShield = EquipManager.Instance.GetEquippedShield();
+            _shieldEffect.SetShield(equippedShield);
+            if(equippedShield != null)
+            {
+                _shieldIcon.enabled = true;
+                _shieldIcon.sprite =  equippedShield.Icon;
+            }
+            else
+            {
+                _shieldIcon.enabled = false;
+                _shieldIcon.sprite = null;
+            }
+        }
 
         if (StageManager.Instance != null)
         {

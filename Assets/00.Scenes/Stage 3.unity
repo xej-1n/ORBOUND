@@ -823,6 +823,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
+--- !u!114 &687760135 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7686667749224927289, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
+  m_PrefabInstance: {fileID: 687760134}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &687760136 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6383375114881239735, guid: afae9146db1d6cf4fa02065448d863eb, type: 3}
+  m_PrefabInstance: {fileID: 687760134}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &950955094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,6 +1290,14 @@ PrefabInstance:
       propertyPath: _hpSlider
       value: 
       objectReference: {fileID: 1979619814}
+    - target: {fileID: 8651402686416793606, guid: 54f2d6d8f7b1c32488c7a623dbf0c829, type: 3}
+      propertyPath: _shieldIcon
+      value: 
+      objectReference: {fileID: 687760135}
+    - target: {fileID: 8651402686416793606, guid: 54f2d6d8f7b1c32488c7a623dbf0c829, type: 3}
+      propertyPath: _weaponIcon
+      value: 
+      objectReference: {fileID: 687760136}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
