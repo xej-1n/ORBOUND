@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -151,19 +151,19 @@ TextureImporter:
       name: Wolf_death_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 45
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 80e885c79055d8ee0800000000000000
+      spriteID: 1099a5a0fec4e224ba47e92acd276f01
       internalID: -1257255221737255416
       vertices: []
       indices: 
@@ -173,19 +173,19 @@ TextureImporter:
       name: Wolf_death_1
       rect:
         serializedVersion: 2
-        x: 55
+        x: 48
         y: 0
-        width: 42
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dacced56d279cf0e0800000000000000
+      spriteID: ae5d5da1b4c93c74593d41a517d1975c
       internalID: -2234745093844185939
       vertices: []
       indices: 
@@ -195,19 +195,19 @@ TextureImporter:
       name: Wolf_death_2
       rect:
         serializedVersion: 2
-        x: 99
+        x: 96
         y: 0
-        width: 46
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b517b9ca736011bc0800000000000000
+      spriteID: 3bcd22cb72ec99c4c9f5efcd9ea682dc
       internalID: -3814260573217263269
       vertices: []
       indices: 
@@ -217,20 +217,64 @@ TextureImporter:
       name: Wolf_death_3
       rect:
         serializedVersion: 2
-        x: 145
+        x: 144
         y: 0
-        width: 143
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3b11fe14c742b5fb0800000000000000
+      spriteID: 5890c28632e02b242afda16f835bd200
       internalID: -4658089273483914829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_death_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba655783d2bad734da904e4890e3c561
+      internalID: 298076098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_death_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2093ce0a276002a48bd0409bea16915b
+      internalID: -2114779234
       vertices: []
       indices: 
       edges: []
@@ -239,7 +283,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 847a1010231045541841bf83ea18c968
     internalID: 0
     vertices: []
     indices: 
@@ -253,6 +297,8 @@ TextureImporter:
       Wolf_death_1: -2234745093844185939
       Wolf_death_2: -3814260573217263269
       Wolf_death_3: -4658089273483914829
+      Wolf_death_4: 298076098
+      Wolf_death_5: -2114779234
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
