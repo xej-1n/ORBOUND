@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class WeaponEffect : MonoBehaviour
 {
+    private WeaponData currentWeapon;
+
     private Enemy markedEnemy;
     private int markTurns;
 
@@ -12,6 +14,17 @@ public class WeaponEffect : MonoBehaviour
     private Enemy focusTarget;
     private int focusLevel;
     private bool focusLastAttackDealtDamage;
+
+    public void SetWeapon(WeaponData weapon)
+    {
+        currentWeapon = weapon;
+        ResetEffects();
+    }
+
+    public bool HasWeapon()
+    {
+        return currentWeapon != null;
+    }
 
     private void Start()
     {
@@ -28,12 +41,12 @@ public class WeaponEffect : MonoBehaviour
         StageManager.Instance.OnBattleEnd -= HandleBattleEnd;
     }
 
-    public void Apply(Player player, Enemy target, int pinAtk, WeaponData weapon)
+    public void Apply(Player player, Enemy target, int pinAtk)
     {
-        if (player == null || target == null || weapon == null || pinAtk <= 0)
+        if (player == null || target == null || currentWeapon == null || pinAtk <= 0)
             return;
 
-        switch (weapon.Type)
+        switch (currentWeapon.Type)
         {
             case WeaponType.Basic:
                 Basic(target, pinAtk);

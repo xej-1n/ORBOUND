@@ -11,9 +11,6 @@ public class Player : MonoBehaviour
     public int _defense;
     public Slider _hpSlider;
 
-    public WeaponData _weapon;
-    public ShieldData _shield;
-
     [SerializeField] private WeaponEffect _weaponEffect;
     [SerializeField] private ShieldEffect _shieldEffect;
 
@@ -22,8 +19,11 @@ public class Player : MonoBehaviour
         _hp = _maxHp;
         _hpSlider.value = 1f;
 
+        if(_weaponEffect != null)
+            _weaponEffect.SetWeapon(EquipManager.Instance.GetEquippedWeapon());
+
         if (_shieldEffect != null)
-            _shieldEffect.SetShield(_shield);
+            _shieldEffect.SetShield(EquipManager.Instance.GetEquippedShield());
 
         if (StageManager.Instance != null)
         {
@@ -66,8 +66,8 @@ public class Player : MonoBehaviour
                 beforeHp[i] = enemies[i] != null ? enemies[i]._hp : 0;
         }
 
-        if (_weapon != null)
-            _weaponEffect.Apply(this, target, pinAtk, _weapon);
+        if (_weaponEffect.HasWeapon())
+            _weaponEffect.Apply(this, target, pinAtk);
         else
             target.Damage(pinAtk);
 
