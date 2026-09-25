@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce54fcc0efa8ce4b8d154a99a3c1eb8, type: 3}
   m_Name: skeleton
   m_EditorClassIdentifier: 
-  EnemyName: "\uD574\uACE8\uBCD1\uC0AC"
+  EnemyName: "\uB370\uBAAC"
   MaxHP: 170
   MinAttack: 14
   MaxAttack: 18
   Defense: 5
   RewardGold: 0
-  Prefab: {fileID: 0}
-  animatorController: {fileID: 0}
-  isFlip: 0
+  animatorController: {fileID: 22100000, guid: 88e8e9c48474af742ad6b85e8f120ab8, type: 2}
+  isFlip: 1
+  scale: 0.5
   IsBoss: 0
   BossType: 0

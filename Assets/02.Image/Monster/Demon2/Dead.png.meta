@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -148,12 +148,12 @@ TextureImporter:
       name: Dead_0
       rect:
         serializedVersion: 2
-        x: 22
+        x: 0
         y: 0
-        width: 76
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: Dead_1
       rect:
         serializedVersion: 2
-        x: 149
+        x: 128
         y: 0
-        width: 88
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: Dead_2
       rect:
         serializedVersion: 2
-        x: 276
+        x: 256
         y: 0
-        width: 101
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -214,7 +214,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dc313d5b041508846869ae91910413ab
     internalID: 0
     vertices: []
     indices: 

@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce54fcc0efa8ce4b8d154a99a3c1eb8, type: 3}
   m_Name: werewolf
   m_EditorClassIdentifier: 
-  EnemyName: "\uB291\uB300\uC778\uAC04"
+  EnemyName: "\uB291\uB300"
   MaxHP: 150
-  MaxAttack: 27
   MinAttack: 22
+  MaxAttack: 27
   Defense: 1
   RewardGold: 0
-  Prefab: {fileID: 0}
+  animatorController: {fileID: 22100000, guid: 5cf7f3d1f24ab3b42b772f51a02fbaa9, type: 2}
+  isFlip: 0
+  scale: 1
+  IsBoss: 0
+  BossType: 0
