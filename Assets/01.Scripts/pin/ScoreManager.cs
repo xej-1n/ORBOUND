@@ -5,6 +5,8 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     public int totalScore = 0;
+
+    private Vector3 _startPosition;
     private float turnTimer = 10f;
     public bool isTurnActive = false;
     public bool isPlaying
@@ -24,7 +26,11 @@ public class ScoreManager : MonoBehaviour
 
     public int Damage { get; private set; }
 
-    void Awake() { instance = this; }
+    void Awake()
+    {
+        instance = this;
+        _startPosition = _ball.transform.position;
+    }
 
     void Start()
     {
@@ -42,6 +48,7 @@ public class ScoreManager : MonoBehaviour
 
     public void Ready()
     {
+        _ball.transform.position = _startPosition;
         _ball.SetActive(true);
     }
 
