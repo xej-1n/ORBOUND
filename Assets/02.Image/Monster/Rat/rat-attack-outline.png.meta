@@ -157,12 +157,12 @@ TextureImporter:
       name: rat-attack-outline_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 5
         y: 0
-        width: 25
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 23
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -179,12 +179,12 @@ TextureImporter:
       name: rat-attack-outline_1
       rect:
         serializedVersion: 2
-        x: 31
+        x: 32
         y: 0
-        width: 29
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 27
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -201,12 +201,12 @@ TextureImporter:
       name: rat-attack-outline_2
       rect:
         serializedVersion: 2
-        x: 67
+        x: 68
         y: 0
-        width: 25
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 23
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -223,12 +223,12 @@ TextureImporter:
       name: rat-attack-outline_3
       rect:
         serializedVersion: 2
-        x: 100
+        x: 101
         y: 0
-        width: 23
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 21
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: rat-attack-outline_4
       rect:
         serializedVersion: 2
-        x: 134
+        x: 135
         y: 0
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 21
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -267,12 +267,12 @@ TextureImporter:
       name: rat-attack-outline_5
       rect:
         serializedVersion: 2
-        x: 165
+        x: 166
         y: 0
-        width: 24
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 22
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -289,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f60f2a259d9a77f438b9a6c9349633a3
     internalID: 0
     vertices: []
     indices: 

@@ -157,12 +157,12 @@ TextureImporter:
       name: rat-idle-outline_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 5
         y: 0
-        width: 25
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 23
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -179,12 +179,12 @@ TextureImporter:
       name: rat-idle-outline_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 0
-        width: 29
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 27
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -201,12 +201,12 @@ TextureImporter:
       name: rat-idle-outline_2
       rect:
         serializedVersion: 2
-        x: 66
+        x: 67
         y: 0
-        width: 27
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 25
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -223,12 +223,12 @@ TextureImporter:
       name: rat-idle-outline_3
       rect:
         serializedVersion: 2
-        x: 99
+        x: 100
         y: 0
-        width: 26
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 24
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: rat-idle-outline_4
       rect:
         serializedVersion: 2
-        x: 130
+        x: 131
         y: 0
-        width: 27
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 25
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -267,12 +267,12 @@ TextureImporter:
       name: rat-idle-outline_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 161
         y: 0
-        width: 29
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 27
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -289,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8d6e997246b65404f84e53063a9ffe7e
     internalID: 0
     vertices: []
     indices: 
