@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb002f3af89032438f22444b83e4561, type: 3}
   m_Name: 2-1
   m_EditorClassIdentifier: 
-  IsBoss: 1
+  IsBoss: 0
   Enemies:
   - {fileID: 11400000, guid: c631b77ac8ecd4d47aad47c66b76cc03, type: 2}
   - {fileID: 11400000, guid: c631b77ac8ecd4d47aad47c66b76cc03, type: 2}

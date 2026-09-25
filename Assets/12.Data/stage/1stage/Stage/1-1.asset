@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb002f3af89032438f22444b83e4561, type: 3}
   m_Name: 1-1
   m_EditorClassIdentifier: 
-  IsBoss: 1
+  IsBoss: 0
   Enemies:
-  - {fileID: 11400000, guid: 7b159c6b9cfb94c46888f1ad2e4764b9, type: 2}
+  - {fileID: 11400000, guid: 9f16eaa92ffbedd479bef89a465b7355, type: 2}
   - {fileID: 11400000, guid: 30970284fc399e54a8d5e2fd5cf17737, type: 2}
   - {fileID: 11400000, guid: 05ffa2124a71c2840852d13f5d289cca, type: 2}
