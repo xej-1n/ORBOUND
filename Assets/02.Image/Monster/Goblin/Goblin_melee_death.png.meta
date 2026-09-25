@@ -151,12 +151,12 @@ TextureImporter:
       name: Goblin_melee_death_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 0
         y: 0
-        width: 32
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: Goblin_melee_death_1
       rect:
         serializedVersion: 2
-        x: 56
+        x: 48
         y: 0
-        width: 35
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: Goblin_melee_death_2
       rect:
         serializedVersion: 2
-        x: 104
+        x: 96
         y: 0
-        width: 35
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: Goblin_melee_death_3
       rect:
         serializedVersion: 2
-        x: 152
+        x: 144
         y: 0
-        width: 35
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bea3cd886d3484748a0fd49f47ab3eb5
     internalID: 0
     vertices: []
     indices: 

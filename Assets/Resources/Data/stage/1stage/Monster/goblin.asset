@@ -19,3 +19,7 @@ MonoBehaviour:
   Defense: 1
   RewardGold: 0
   Prefab: {fileID: 0}
+  animatorController: {fileID: 22100000, guid: 4db3be1786dd3784d9ab465d75622642, type: 2}
+  isFlip: 0
+  IsBoss: 0
+  BossType: 0

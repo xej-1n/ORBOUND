@@ -151,12 +151,12 @@ TextureImporter:
       name: Slime_idle_0
       rect:
         serializedVersion: 2
-        x: 26
+        x: 0
         y: 0
-        width: 19
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.75, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: Slime_idle_1
       rect:
         serializedVersion: 2
-        x: 73
+        x: 48
         y: 0
-        width: 21
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.75, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: Slime_idle_2
       rect:
         serializedVersion: 2
-        x: 122
+        x: 96
         y: 0
-        width: 19
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.75, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: Slime_idle_3
       rect:
         serializedVersion: 2
-        x: 171
+        x: 144
         y: 0
-        width: 17
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.75, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7e23daaa1ec82d941a53fce2c6443950
     internalID: 0
     vertices: []
     indices: 

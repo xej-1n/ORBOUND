@@ -151,19 +151,19 @@ TextureImporter:
       name: Goblin_melee_attack_0
       rect:
         serializedVersion: 2
-        x: 17
+        x: 0
         y: 0
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ad0f267ef918a9940800000000000000
+      spriteID: 6a081432c66809344acbeaaac54373fa
       internalID: 5303694034963984602
       vertices: []
       indices: 
@@ -173,19 +173,19 @@ TextureImporter:
       name: Goblin_melee_attack_1
       rect:
         serializedVersion: 2
-        x: 68
+        x: 48
         y: 0
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 69e579f25a4893f80800000000000000
+      spriteID: b22e240f3bbe0cd44b24ed4653b1d4ab
       internalID: -8126318207610429802
       vertices: []
       indices: 
@@ -195,19 +195,19 @@ TextureImporter:
       name: Goblin_melee_attack_2
       rect:
         serializedVersion: 2
-        x: 103
+        x: 96
         y: 0
-        width: 36
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0d84ecd196cdb0c40800000000000000
+      spriteID: 463ce25f904cb0f42895ea16b6a9b8d5
       internalID: 5479715715656075472
       vertices: []
       indices: 
@@ -217,19 +217,19 @@ TextureImporter:
       name: Goblin_melee_attack_3
       rect:
         serializedVersion: 2
-        x: 159
+        x: 144
         y: 0
-        width: 28
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b2812526fe9dcac10800000000000000
+      spriteID: 50947e4dd681c4d43856e1d17cc75200
       internalID: 2066265951226173483
       vertices: []
       indices: 
@@ -239,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 26c58e8c17160194bbe5fc15b1257489
     internalID: 0
     vertices: []
     indices: 
