@@ -157,12 +157,12 @@ TextureImporter:
       name: Attack4_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 66
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -179,12 +179,12 @@ TextureImporter:
       name: Attack4_1
       rect:
         serializedVersion: 2
-        x: 101
+        x: 96
         y: 0
-        width: 68
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -201,12 +201,12 @@ TextureImporter:
       name: Attack4_2
       rect:
         serializedVersion: 2
-        x: 195
+        x: 192
         y: 0
-        width: 70
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -223,12 +223,12 @@ TextureImporter:
       name: Attack4_3
       rect:
         serializedVersion: 2
-        x: 293
+        x: 288
         y: 0
-        width: 65
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: Attack4_4
       rect:
         serializedVersion: 2
-        x: 392
+        x: 384
         y: 0
-        width: 66
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -267,12 +267,12 @@ TextureImporter:
       name: Attack4_5
       rect:
         serializedVersion: 2
-        x: 490
+        x: 480
         y: 0
-        width: 66
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -289,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5f0082bc63b104049bfb352be9a56977
     internalID: 0
     vertices: []
     indices: 

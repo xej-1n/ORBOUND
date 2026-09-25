@@ -20,7 +20,7 @@ public class EnemyData : ScriptableObject
     public int RewardGold;
     public RuntimeAnimatorController animatorController;
     public bool isFlip;
-    public int scale = 1;
+    public float scale = 1;
 
     [Header("Boss")]
     public bool IsBoss;

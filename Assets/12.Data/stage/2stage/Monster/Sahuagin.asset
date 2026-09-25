@@ -18,6 +18,8 @@ MonoBehaviour:
   MaxAttack: 17
   Defense: 2
   RewardGold: 0
-  Prefab: {fileID: 0}
   animatorController: {fileID: 22100000, guid: 5eca49bcc2ae4d34da9a03a2543d4983, type: 2}
-  isFlip: 0
+  isFlip: 1
+  scale: 1
+  IsBoss: 0
+  BossType: 0
