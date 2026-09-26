@@ -15,6 +15,8 @@ public class ItemSlot : MonoBehaviour
     private InventoryUiManager inventoryUiManager;
     private invenItemInfoPannel inventoryInfoPanel;
 
+    public TextMeshProUGUI _tooltipText;
+
     public void SetItem(string name, Sprite sprite, string desc, ItemInfoPanel panel, ShopItemData data, StoreManager manager)
     {
         itemName.text = name;
@@ -25,6 +27,7 @@ public class ItemSlot : MonoBehaviour
         infoPanel = panel;
         itemData = data;
         storeManager = manager;
+        _tooltipText.text = name + "\n" + desc;
 
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(ShowInfo);
