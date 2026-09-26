@@ -467,6 +467,7 @@ MonoBehaviour:
   description: {fileID: 1915645844}
   buttonText: {fileID: 1157965581}
   actionButton: {fileID: 1042144202}
+  _equipSound: {fileID: 8300000, guid: 7be06a4fd1f3bbf418128c143f8fd3f4, type: 3}
 --- !u!1 &290790868
 GameObject:
   m_ObjectHideFlags: 0

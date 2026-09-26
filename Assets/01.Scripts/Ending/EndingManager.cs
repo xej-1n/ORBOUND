@@ -18,6 +18,7 @@ public class EndingManager : MonoBehaviour
 
     public void GoToTitle()
     {
+        SoundManager.Instance.PlayClickSFX();
         SceneManager.LoadScene("Title");
     }
 }

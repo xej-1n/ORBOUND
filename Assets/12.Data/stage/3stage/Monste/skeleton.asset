@@ -21,5 +21,7 @@ MonoBehaviour:
   animatorController: {fileID: 22100000, guid: 88e8e9c48474af742ad6b85e8f120ab8, type: 2}
   isFlip: 1
   scale: 0.5
+  _attackSound: {fileID: 8300000, guid: 2a155f99a35a8a84c83539f7096db68d, type: 3}
+  _deadSound: {fileID: 8300000, guid: 179e8f6213bcc644699b557962c12e33, type: 3}
   IsBoss: 0
   BossType: 0

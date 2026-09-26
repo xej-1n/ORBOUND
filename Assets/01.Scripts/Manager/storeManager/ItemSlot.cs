@@ -55,6 +55,7 @@ public class ItemSlot : MonoBehaviour
     }
     private void ShowInventoryInfo()
     {
+        SoundManager.Instance.PlayClickSFX();
         inventoryInfoPanel.Show(itemData, inventoryUiManager);
     }
     public void SetPurchased()

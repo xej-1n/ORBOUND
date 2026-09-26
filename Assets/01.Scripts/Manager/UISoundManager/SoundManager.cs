@@ -8,6 +8,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioSource _bgmSource;
     [SerializeField] private AudioSource _sfxSource;
 
+    public AudioClip _clickSound;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -52,5 +54,10 @@ public class SoundManager : MonoBehaviour
     public void SetSFXVolume(float volume)
     {
         _sfxSource.volume = volume;
+    }
+
+    public void PlayClickSFX()
+    {
+        PlaySFX(_clickSound);
     }
 }

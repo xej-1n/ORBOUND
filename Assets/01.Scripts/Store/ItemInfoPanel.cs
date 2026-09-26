@@ -35,18 +35,19 @@ public class ItemInfoPanel : MonoBehaviour
 
         bool hasItem = InventoryManager.Instance.HasItem(data);
         buyBtn.interactable = !hasItem;
-        buyBtnText.text = hasItem ? "±¸¸Å¿Ï·á" : "±¸¸Å";
+        buyBtnText.text = hasItem ? "êµ¬ë§¤í•¨" : "êµ¬ë§¤";
 
         gameObject.SetActive(true);
     }
 
     private void Buy()
     {
+        SoundManager.Instance.PlayClickSFX();
         if (storeManager.BuyItem(itemData))
         {
             itemSlot.SetPurchased();
             buyBtn.interactable = false;
-            buyBtnText.text = "±¸¸Å¿Ï·á";
+            buyBtnText.text = "êµ¬ë§¤í•¨";
         }
     }
 

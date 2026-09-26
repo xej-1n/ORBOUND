@@ -18,8 +18,10 @@ MonoBehaviour:
   MaxAttack: 12
   Defense: 0
   RewardGold: 0
-  Prefab: {fileID: 0}
   animatorController: {fileID: 22100000, guid: 5cf7f3d1f24ab3b42b772f51a02fbaa9, type: 2}
   isFlip: 0
+  scale: 1
+  _attackSound: {fileID: 8300000, guid: 2a155f99a35a8a84c83539f7096db68d, type: 3}
+  _deadSound: {fileID: 8300000, guid: 179e8f6213bcc644699b557962c12e33, type: 3}
   IsBoss: 0
   BossType: 0

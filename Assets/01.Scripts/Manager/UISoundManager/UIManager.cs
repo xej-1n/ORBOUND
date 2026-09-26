@@ -48,12 +48,14 @@ public class UIManager : MonoBehaviour
 
     public void Store()
     {
+        SoundManager.Instance.PlayClickSFX();
         GameSaveManager.Instance.SetPreviousScene(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("Store");
     }
 
     public void Setup()
     {
+        SoundManager.Instance.PlayClickSFX();
         GameSaveManager.Instance.SetPreviousScene(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("Weapon warehouse");
     }

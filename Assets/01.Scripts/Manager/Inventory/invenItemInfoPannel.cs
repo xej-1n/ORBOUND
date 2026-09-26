@@ -10,6 +10,8 @@ public class invenItemInfoPannel : MonoBehaviour
     [SerializeField] private TMP_Text buttonText;
     [SerializeField] private Button actionButton;
 
+    public AudioClip _equipSound;
+
     private ShopItemData itemData;
     private InventoryUiManager inventoryUiManager;
 
@@ -54,11 +56,13 @@ public class invenItemInfoPannel : MonoBehaviour
 
     private void Equip()
     {
+        SoundManager.Instance.PlaySFX(_equipSound);
         inventoryUiManager.EquipItem(itemData);
         Hide();
     }
     private void Unequip()
     {
+        SoundManager.Instance.PlaySFX(_equipSound);
         inventoryUiManager.UnequipItem(itemData);
         Hide();
     }

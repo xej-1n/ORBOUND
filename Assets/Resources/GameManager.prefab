@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bgmSource: {fileID: 7471050059604661099}
   _sfxSource: {fileID: -4069582198264659847}
+  _clickSound: {fileID: 8300000, guid: 95b3f8e813fb358488ac11db04a3e19b, type: 3}
 --- !u!82 &7471050059604661099
 AudioSource:
   m_ObjectHideFlags: 0
