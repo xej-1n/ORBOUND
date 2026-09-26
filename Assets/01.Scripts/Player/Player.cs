@@ -17,6 +17,9 @@ public class Player : MonoBehaviour
     [SerializeField] private Image _weaponIcon;
     [SerializeField] private Image _shieldIcon;
 
+    public AudioClip _attackSound;
+    public AudioClip _deadSound;
+
     private void Start()
     {
         _hp = _maxHp;
@@ -76,6 +79,7 @@ public class Player : MonoBehaviour
             return;
 
         _animator.SetTrigger("onAttack");
+        SoundManager.Instance.PlaySFX(_attackSound);
 
         if (_shieldEffect != null)
             pinAtk += _shieldEffect.GetChargeBonus();
@@ -134,7 +138,10 @@ public class Player : MonoBehaviour
         _hpSlider.value = (float)_hp / _maxHp;
 
         if (_hp <= 0)
+        {
+            SoundManager.Instance.PlaySFX(_deadSound);
             _animator.SetBool("isDead", true);
+        }
     }
 
     public void Damage(int enemyAtk)

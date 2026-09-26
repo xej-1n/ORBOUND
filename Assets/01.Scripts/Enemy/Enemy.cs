@@ -98,6 +98,7 @@ public class Enemy : MonoBehaviour
 
     public void Attack(Player target)
     {
+        SoundManager.Instance.PlaySFX(_enemyData._attackSound);
         _animator.SetTrigger("onAttack");
         target.Damage(this, _getAttack);
     }
@@ -124,6 +125,7 @@ public class Enemy : MonoBehaviour
         if (_hp <= 0)
         {
             _animator.SetBool("isDead", true);
+            SoundManager.Instance.PlaySFX(_enemyData._deadSound);
 
             if (!_rewardGiven)
             {

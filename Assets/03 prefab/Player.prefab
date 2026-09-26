@@ -109,10 +109,12 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 2043921617714189330}
   _defense: 1
   _hpSlider: {fileID: 0}
-  _weapon: {fileID: 0}
-  _shield: {fileID: 0}
   _weaponEffect: {fileID: 2065296492741247012}
   _shieldEffect: {fileID: 841665220832530284}
+  _weaponIcon: {fileID: 0}
+  _shieldIcon: {fileID: 0}
+  _attackSound: {fileID: 8300000, guid: 2a155f99a35a8a84c83539f7096db68d, type: 3}
+  _deadSound: {fileID: 8300000, guid: 1acd7000e262d7748a76fd4ccbd9ba7b, type: 3}
 --- !u!114 &841665220832530284
 MonoBehaviour:
   m_ObjectHideFlags: 0

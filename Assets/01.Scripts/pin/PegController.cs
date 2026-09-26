@@ -13,6 +13,8 @@ public class PegController : MonoBehaviour
     private float lastHitTime = -1f;
     private float hitCooldown = 0.3f;
 
+    public AudioClip _hitSound;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -22,6 +24,8 @@ public class PegController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Orb"))
         {
+            SoundManager.Instance.PlaySFX(_hitSound);
+
             if (Time.time - lastHitTime >= hitCooldown) HitPeg();
         }
     }

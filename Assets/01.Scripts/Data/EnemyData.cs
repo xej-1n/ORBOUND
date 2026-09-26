@@ -21,6 +21,8 @@ public class EnemyData : ScriptableObject
     public RuntimeAnimatorController animatorController;
     public bool isFlip;
     public float scale = 1;
+    public AudioClip _attackSound;
+    public AudioClip _deadSound;
 
     [Header("Boss")]
     public bool IsBoss;
