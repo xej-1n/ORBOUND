@@ -8,9 +8,12 @@ public class BallSpawner : MonoBehaviour
     [SerializeField] private Sprite[] ballSprites;
     [SerializeField] private float spawnInterval = 0.5f;
 
+    public AudioClip _bgm;
+
     private void Start()
     {
         StartCoroutine(SpawnBall());
+        SoundManager.Instance.PlayBGM(_bgm);
     }
 
     private IEnumerator SpawnBall()

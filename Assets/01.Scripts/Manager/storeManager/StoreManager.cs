@@ -15,10 +15,14 @@ public class StoreManager : MonoBehaviour
     [SerializeField] private List<WeaponData> weapons = new List<WeaponData>();
     [SerializeField] private List<ShieldData> shields = new List<ShieldData>();
 
+    public AudioClip _bgm;
+
     private void Start()
     {
         CreateItemSlots();
         UpdateGoldUI();
+
+        SoundManager.Instance.PlayBGM(_bgm);
     }
 
     private void CreateItemSlots()

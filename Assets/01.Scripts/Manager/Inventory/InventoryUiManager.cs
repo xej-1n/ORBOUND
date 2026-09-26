@@ -10,11 +10,15 @@ public class InventoryUiManager : MonoBehaviour
     [SerializeField] private invenItemInfoPannel infoPanel;
     [SerializeField] private TMP_Text goldtext;
 
+    public AudioClip _bgm;
+
     private void Start()
     {
         CreateItemSlots();
         UpdateEquipmentUI();
         UpdateGoldUI();
+
+        SoundManager.Instance.PlayBGM(_bgm);
     }
     public void RefreshInventory()
     {

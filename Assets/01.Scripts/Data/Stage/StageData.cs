@@ -5,5 +5,6 @@ using UnityEngine;
 public class StageData : ScriptableObject
 {
     public bool IsBoss;
+    public AudioClip _bgm;
     public List<EnemyData> Enemies;
 }

@@ -37,6 +37,8 @@ public class StageManager : MonoBehaviour
     public void LoadStage(StageData stageData)
     {
         currentStage = stageData;
+        SoundManager.Instance.PlayBGM(currentStage._bgm);
+
         enemies = new Enemy[currentStage.Enemies.Count];
 
         for (int i = 0; i < currentStage.Enemies.Count; i++)

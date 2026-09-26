@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: 2-boss
   m_EditorClassIdentifier: 
   IsBoss: 1
+  _bgm: {fileID: 8300000, guid: 6547941cc3e4a0d4099d7aedb9b62922, type: 3}
   Enemies:
   - {fileID: 11400000, guid: 07b20e8e4bc7f474f905960d286dd6ac, type: 2}
