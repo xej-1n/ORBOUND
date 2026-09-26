@@ -42,11 +42,13 @@ public class ItemSlot : MonoBehaviour
         {
             itemName.text = weapon.WeaponName;
             icon.sprite = weapon.Icon;
+            _tooltipText.text = weapon.WeaponName + "\n" + weapon.Description;
         }
         else if (data is ShieldData shield)
         {
             itemName.text = shield.ShieldName;
             icon.sprite = shield.Icon;
+            _tooltipText.text = shield.ShieldName + "\n" + shield.Description;
         }
 
         button.onClick.RemoveAllListeners();
