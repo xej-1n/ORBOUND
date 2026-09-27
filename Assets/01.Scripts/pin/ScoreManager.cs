@@ -50,6 +50,11 @@ public class ScoreManager : MonoBehaviour
     {
         _ball.transform.position = _startPosition;
         _ball.SetActive(true);
+
+        foreach (var peg in GetComponentsInChildren<PegController>())
+        {
+            peg.Clear();
+        }
     }
 
     public void StartTurn()
