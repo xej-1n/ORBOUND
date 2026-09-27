@@ -15,7 +15,7 @@ MonoBehaviour:
   IsBoss: 0
   _bgm: {fileID: 8300000, guid: e2d0901728372d348abdb841651a8878, type: 3}
   Enemies:
+  - {fileID: 11400000, guid: 3d01bb91fde2e7c488ff2031a0f87667, type: 2}
+  - {fileID: 11400000, guid: 3d01bb91fde2e7c488ff2031a0f87667, type: 2}
   - {fileID: 11400000, guid: 6e699fc7dec10024399a96856fabfbb9, type: 2}
   - {fileID: 11400000, guid: 6e699fc7dec10024399a96856fabfbb9, type: 2}
-  - {fileID: 11400000, guid: 9f16eaa92ffbedd479bef89a465b7355, type: 2}
-  - {fileID: 11400000, guid: 17b0538a52f98624ba79abdbbf7fe97d, type: 2}

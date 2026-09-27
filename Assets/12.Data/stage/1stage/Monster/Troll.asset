@@ -17,7 +17,7 @@ MonoBehaviour:
   MinAttack: 15
   MaxAttack: 20
   Defense: 4
-  RewardGold: 0
+  RewardGold: 60
   animatorController: {fileID: 22100000, guid: a0d65996465f4434e96585c5bfbc3562, type: 2}
   isFlip: 1
   scale: 1

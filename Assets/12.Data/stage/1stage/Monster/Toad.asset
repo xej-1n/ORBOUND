@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cce54fcc0efa8ce4b8d154a99a3c1eb8, type: 3}
-  m_Name: Gnoll
+  m_Name: Toad
   m_EditorClassIdentifier: 
-  EnemyName: "\uB180"
-  MaxHP: 130
-  MinAttack: 15
-  MaxAttack: 19
-  Defense: 2
-  RewardGold: 10
-  animatorController: {fileID: 22100000, guid: 9ebc791b326b29340964353030a254ed, type: 2}
-  isFlip: 1
-  scale: 0.5
+  EnemyName: "\uAC1C\uAD6C\uB9AC"
+  MaxHP: 50
+  MinAttack: 7
+  MaxAttack: 9
+  Defense: 1
+  RewardGold: 15
+  animatorController: {fileID: 22100000, guid: ad7350debc7e3ff409403e78a97fde8e, type: 2}
+  isFlip: 0
+  scale: 1
   _attackSound: {fileID: 8300000, guid: 2a155f99a35a8a84c83539f7096db68d, type: 3}
   _deadSound: {fileID: 8300000, guid: 179e8f6213bcc644699b557962c12e33, type: 3}
   IsBoss: 0
