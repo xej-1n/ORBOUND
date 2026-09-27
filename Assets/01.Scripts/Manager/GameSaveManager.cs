@@ -115,7 +115,7 @@ public class GameSaveManager : MonoBehaviour
         if (string.IsNullOrEmpty(weaponName))
             return null;
 
-        WeaponData[] weapons = Resources.LoadAll<WeaponData>("Data/Weapons");
+        WeaponData[] weapons = Resources.LoadAll<WeaponData>("Data/Weapon");
 
         foreach (WeaponData weapon in weapons)
         {
@@ -131,7 +131,7 @@ public class GameSaveManager : MonoBehaviour
         if (string.IsNullOrEmpty(shieldName))
             return null;
 
-        ShieldData[] shields = Resources.LoadAll<ShieldData>("Data/Shields");
+        ShieldData[] shields = Resources.LoadAll<ShieldData>("Data/Shiled");
 
         foreach (ShieldData shield in shields)
         {
