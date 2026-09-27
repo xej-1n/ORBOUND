@@ -30,6 +30,16 @@ public class PegController : MonoBehaviour
         }
     }
 
+    public void Clear()
+    {
+        hitCount = 0;
+        lastHitTime = -1f;
+
+        Color originalColor = spriteRenderer.color;
+        originalColor.a = 1f;
+        spriteRenderer.color = originalColor;
+    }
+
     void HitPeg()
     {
         if (hitCount >= maxHits) return;
