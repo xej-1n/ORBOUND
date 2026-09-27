@@ -45,10 +45,20 @@ public class SoundManager : MonoBehaviour
 
         _sfxSource.PlayOneShot(clip);
     }
+    
+    public float GetBGMVolume
+    {
+        get { return _bgmSource.volume; }
+    }
 
     public void SetBGMVolume(float volume)
     {
         _bgmSource.volume = volume;
+    }
+
+    public float GetSFXVolume
+    {
+        get { return _sfxSource.volume; }
     }
 
     public void SetSFXVolume(float volume)

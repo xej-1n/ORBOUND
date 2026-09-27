@@ -14,6 +14,17 @@ public class MessageManager : MonoBehaviour
     {
         instance = this;
     }
+
+    public GameObject _menuObject;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(!_menuObject.activeSelf)
+                _menuObject.SetActive(true);
+        }
+    }
     
     public void Open(string message, float duration = 1f)
     {
