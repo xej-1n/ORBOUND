@@ -39,6 +39,15 @@ public class StageManager : MonoBehaviour
         currentStage = stageData;
         SoundManager.Instance.PlayBGM(currentStage._bgm);
 
+        if(enemies != null)
+        {
+            foreach (Enemy enemy in enemies)
+            {
+                if (enemy != null)
+                    Destroy(enemy.gameObject);
+            }
+        }
+
         enemies = new Enemy[currentStage.Enemies.Count];
 
         for (int i = 0; i < currentStage.Enemies.Count; i++)
