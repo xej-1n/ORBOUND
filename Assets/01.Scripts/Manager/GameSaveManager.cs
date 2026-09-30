@@ -70,6 +70,11 @@ public class GameSaveManager : MonoBehaviour
 
         moneyManager.Instance.SetGold(data.gold);
 
+        EquipManager.Instance.UnequipWeapon();
+        EquipManager.Instance.UnequipShield();
+        InventoryManager.Instance.GetWeapons().Clear();
+        InventoryManager.Instance.GetShields().Clear();
+
         foreach (string weaponName in data.weapons)
         {
             WeaponData weapon = FindWeapon(weaponName);
@@ -98,16 +103,22 @@ public class GameSaveManager : MonoBehaviour
         Debug.Log("게임 불러오기 완료");
     }
 
-    public void SetStage(int stageIndex)
+    public void SetStage(int stageIndex, string sceneName = null)
     {
         currentStageIndex = stageIndex;
-        currentSceneName = SceneManager.GetActiveScene().name;
+        currentSceneName = sceneName ?? SceneManager.GetActiveScene().name;
         Save();
     }
 
     public void LoadCurrentStage()
     {
-        SceneManager.LoadScene(currentStageIndex);
+        if (string.IsNullOrEmpty(currentSceneName) || !Application.CanStreamedLevelBeLoaded(currentSceneName))
+        {
+            Debug.LogError("저장된 씬을 불러올 수 없습니다: " + currentSceneName);
+            return;
+        }
+
+        SceneManager.LoadScene(currentSceneName);
     }
 
     private WeaponData FindWeapon(string weaponName)

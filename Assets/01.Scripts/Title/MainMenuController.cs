@@ -18,7 +18,7 @@ public class MainMenuController : MonoBehaviour
         }
 
         GameSaveManager.Instance.Load();
-        SceneManager.LoadScene("Stage 1");
+        GameSaveManager.Instance.LoadCurrentStage();
     }
     public void OnExitButtonClicked()
     {

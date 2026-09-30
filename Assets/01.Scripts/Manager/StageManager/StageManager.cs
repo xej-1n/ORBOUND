@@ -168,7 +168,15 @@ public class StageManager : MonoBehaviour
         {
             int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
 
-            GameSaveManager.Instance.SetStage(nextSceneIndex);
+            string nextScenePath = SceneUtility.GetScenePathByBuildIndex(nextSceneIndex);
+            if (string.IsNullOrEmpty(nextScenePath))
+            {
+                Debug.LogError("다음 씬이 빌드 설정에 없습니다: " + nextSceneIndex);
+                return;
+            }
+
+            string nextSceneName = System.IO.Path.GetFileNameWithoutExtension(nextScenePath);
+            GameSaveManager.Instance.SetStage(0, nextSceneName);
 
             SceneManager.LoadScene(nextSceneIndex);
         }
