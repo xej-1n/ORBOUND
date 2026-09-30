@@ -13,6 +13,16 @@ public class Menu : MonoBehaviour
         _sfxVolumeSlider.value = SoundManager.Instance.GetSFXVolume;
     }
 
+    void OnEnable()
+    {
+        Time.timeScale = 0f;
+    }
+
+    void OnDisable()
+    {
+        Time.timeScale = 1f;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
