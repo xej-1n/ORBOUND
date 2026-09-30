@@ -17,7 +17,7 @@ public class DragAndShoot : MonoBehaviour
     private bool isDragging = false;
     private float currentChargeTime = 0f;
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         powerGauge.fillAmount = 0;
