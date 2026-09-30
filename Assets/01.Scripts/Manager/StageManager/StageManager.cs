@@ -35,8 +35,9 @@ public class StageManager : MonoBehaviour
     {
         int nextStageIndex = CurrentStageIndex + 1;
         string sceneName = SceneManager.GetActiveScene().name;
+        bool movingToNextScene = nextStageIndex >= stageData.Length;
 
-        if (nextStageIndex >= stageData.Length)
+        if (movingToNextScene)
         {
             int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             string scenePath = SceneUtility.GetScenePathByBuildIndex(nextSceneIndex);
@@ -52,7 +53,9 @@ public class StageManager : MonoBehaviour
 
         StopAllCoroutines();
         Time.timeScale = 1f;
-        GameSaveManager.Instance.SetStage(nextStageIndex, sceneName, resetPlayerHealth: true);
+        if (!movingToNextScene)
+            SaveBattle(0, -1);
+        GameSaveManager.Instance.SetStage(nextStageIndex, sceneName, resetPlayerHealth: movingToNextScene);
         SceneManager.LoadScene(sceneName);
     }
 
