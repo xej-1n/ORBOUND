@@ -24,6 +24,11 @@ public class DragAndShoot : MonoBehaviour
         arrowPivot.gameObject.SetActive(false);
     }
 
+    void OnEnable()
+    {
+        rb.gravityScale = 0f;
+    }
+
     void OnMouseDown()
     {
         if (ScoreManager.instance.isTurnActive)
@@ -62,6 +67,7 @@ public class DragAndShoot : MonoBehaviour
             Vector2 endPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 dragDirection = (startPoint - endPoint).normalized;
             rb.AddForce(dragDirection * maxPower, ForceMode2D.Impulse);
+            rb.gravityScale = 1f;
 
             ScoreManager.instance.StartTurn();
         }

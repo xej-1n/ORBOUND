@@ -1,4 +1,5 @@
 using UnityEngine;
+using DG.Tweening;
 
 public enum PegType { TopBumper, BottomBumper, LeftObstacle, RightObstacle }
 
@@ -52,7 +53,7 @@ public class PegController : MonoBehaviour
         else if (pegType == PegType.BottomBumper) score = 4;
         else score = 6;
 
-     
+        transform.DOShakePosition(0.2f, 0.1f, 10, 90, false, true);
         ScoreManager.instance.AddPegHit(pegType, score);
 
         if (hitCount >= maxHits)
