@@ -24,6 +24,38 @@ public class StageManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F2))
+            ForceNextStageForTest();
+    }
+
+    // Test shortcut: reload the scene to discard all running combat and pinball state.
+    private void ForceNextStageForTest()
+    {
+        int nextStageIndex = CurrentStageIndex + 1;
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        if (nextStageIndex >= stageData.Length)
+        {
+            int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+            string scenePath = SceneUtility.GetScenePathByBuildIndex(nextSceneIndex);
+            if (string.IsNullOrEmpty(scenePath))
+            {
+                Debug.LogWarning("다음 테스트 씬이 빌드 설정에 없습니다.");
+                return;
+            }
+
+            sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePath);
+            nextStageIndex = 0;
+        }
+
+        StopAllCoroutines();
+        Time.timeScale = 1f;
+        GameSaveManager.Instance.SetStage(nextStageIndex, sceneName, resetPlayerHealth: true);
+        SceneManager.LoadScene(sceneName);
+    }
+
     private void Start()
     {
         int stageIndex = GameSaveManager.Instance.CurrentStageIndex;
