@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Troll
   m_EditorClassIdentifier: 
   EnemyName: "\uD2B8\uB864"
-  MaxHP: 280
+  MaxHP: 240
   MinAttack: 15
   MaxAttack: 20
   Defense: 4
