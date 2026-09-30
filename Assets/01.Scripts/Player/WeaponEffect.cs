@@ -15,6 +15,36 @@ public class WeaponEffect : MonoBehaviour
     private int focusLevel;
     private bool focusLastAttackDealtDamage;
 
+    public WeaponSaveData CaptureState(Enemy[] enemies)
+    {
+        return new WeaponSaveData
+        {
+            itemName = currentWeapon != null ? currentWeapon.name : "",
+            markedEnemy = System.Array.IndexOf(enemies, markedEnemy), markTurns = markTurns,
+            dotTarget = System.Array.IndexOf(enemies, dotTarget), dotDamage = dotDamage, dotTurns = dotTurns,
+            focusTarget = System.Array.IndexOf(enemies, focusTarget), focusLevel = focusLevel,
+            focusLastAttackDealtDamage = focusLastAttackDealtDamage
+        };
+    }
+
+    public void RestoreState(WeaponSaveData data, Enemy[] enemies)
+    {
+        if (data == null || currentWeapon == null || data.itemName != currentWeapon.name) return;
+        markedEnemy = FindSavedTarget(enemies, data.markedEnemy);
+        markTurns = data.markTurns;
+        dotTarget = FindSavedTarget(enemies, data.dotTarget);
+        dotDamage = data.dotDamage;
+        dotTurns = data.dotTurns;
+        focusTarget = FindSavedTarget(enemies, data.focusTarget);
+        focusLevel = data.focusLevel;
+        focusLastAttackDealtDamage = data.focusLastAttackDealtDamage;
+    }
+
+    private static Enemy FindSavedTarget(Enemy[] enemies, int index)
+    {
+        return index >= 0 && index < enemies.Length ? enemies[index] : null;
+    }
+
     public void SetWeapon(WeaponData weapon)
     {
         currentWeapon = weapon;

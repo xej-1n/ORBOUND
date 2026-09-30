@@ -10,6 +10,8 @@ public class GameSaveManager : MonoBehaviour
     private int currentStageIndex;
     private string currentSceneName;
     private string previousSceneName;
+    private BattleSaveData currentBattle;
+    public int? SavedPlayerHp { get; private set; }
     public int CurrentStageIndex => currentStageIndex;
 
     private void Awake()
@@ -35,6 +37,9 @@ public class GameSaveManager : MonoBehaviour
         data.stageIndex = currentStageIndex;
         data.gold = moneyManager.Instance.Gold;
         data.sceneName = currentSceneName;
+        data.battle = currentBattle;
+        data.hasPlayerHp = SavedPlayerHp.HasValue;
+        data.playerHp = SavedPlayerHp.GetValueOrDefault();
 
         foreach (WeaponData weapon in InventoryManager.Instance.GetWeapons())
             data.weapons.Add(weapon.name);
@@ -67,6 +72,8 @@ public class GameSaveManager : MonoBehaviour
 
         currentStageIndex = data.stageIndex;
         currentSceneName = data.sceneName;
+        currentBattle = data.battle;
+        SavedPlayerHp = data.hasPlayerHp ? (int?)data.playerHp : null;
 
         moneyManager.Instance.SetGold(data.gold);
 
@@ -105,9 +112,36 @@ public class GameSaveManager : MonoBehaviour
 
     public void SetStage(int stageIndex, string sceneName = null)
     {
+        string targetScene = sceneName ?? SceneManager.GetActiveScene().name;
+        if (currentStageIndex != stageIndex || currentSceneName != targetScene)
+            currentBattle = null;
         currentStageIndex = stageIndex;
-        currentSceneName = sceneName ?? SceneManager.GetActiveScene().name;
+        currentSceneName = targetScene;
         Save();
+    }
+
+    public BattleSaveData GetBattle(int stageIndex)
+    {
+        return currentStageIndex == stageIndex &&
+            currentSceneName == SceneManager.GetActiveScene().name ? currentBattle : null;
+    }
+
+    public void SaveBattle(int stageIndex, BattleSaveData battle)
+    {
+        currentStageIndex = stageIndex;
+        currentSceneName = SceneManager.GetActiveScene().name;
+        currentBattle = battle;
+        SavedPlayerHp = battle.playerHp;
+        Save();
+    }
+
+    public void ResetProgress()
+    {
+        currentStageIndex = 0;
+        currentSceneName = null;
+        currentBattle = null;
+        previousSceneName = null;
+        SavedPlayerHp = null;
     }
 
     public void LoadCurrentStage()
@@ -160,6 +194,7 @@ public class GameSaveManager : MonoBehaviour
 
     public void DeleteSave()
     {
+        ResetProgress();
         if (!File.Exists(savePath))
             return;
 

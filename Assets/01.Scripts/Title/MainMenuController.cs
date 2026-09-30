@@ -6,6 +6,7 @@ public class MainMenuController : MonoBehaviour
     public void OnStartButtonClicked()
     {
         SoundManager.Instance.PlayClickSFX();
+        GameSaveManager.Instance.DeleteSave();
         SceneManager.LoadScene("Stage 1");
     }
     public void OnContinueButtonClicked()

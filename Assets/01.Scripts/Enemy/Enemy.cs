@@ -34,6 +34,30 @@ public class Enemy : MonoBehaviour
         _hpSlider.value = _hp;
     }
 
+    public EnemySaveData CaptureState()
+    {
+        return new EnemySaveData
+        {
+            hp = _hp, rewardGiven = _rewardGiven,
+            crusherReady = _crusherReady, crusherDelay = _crusherDelay,
+            barrierUsed = _barrierUsed, barrierAmount = _barrierAmount,
+            barrierTimer = _barrierTimer
+        };
+    }
+
+    public void RestoreState(EnemySaveData data)
+    {
+        _hp = Mathf.Clamp(data.hp, 0, _enemyData.MaxHP);
+        _rewardGiven = data.rewardGiven || _hp == 0;
+        _crusherReady = data.crusherReady;
+        _crusherDelay = data.crusherDelay;
+        _barrierUsed = data.barrierUsed;
+        _barrierAmount = data.barrierAmount;
+        _barrierTimer = data.barrierTimer;
+        _hpSlider.value = _hp;
+        _animator.SetBool("isDead", _hp == 0);
+    }
+
     public IEnumerator Turn(Player target)
     {
         bool canAttack = true;

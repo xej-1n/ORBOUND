@@ -23,6 +23,27 @@ public class Player : MonoBehaviour
     public Transform _damageTextSpawnPoint;
     public DamageText _damageTextPrefab;
 
+    public void CaptureState(BattleSaveData data, Enemy[] enemies)
+    {
+        data.playerHp = _hp;
+        data.shield = _shieldEffect != null ? _shieldEffect.CaptureState() : null;
+        data.weapon = _weaponEffect != null ? _weaponEffect.CaptureState(enemies) : null;
+    }
+
+    public void RestoreState(BattleSaveData data, Enemy[] enemies)
+    {
+        RestoreHealth(data.playerHp);
+        if (_shieldEffect != null) _shieldEffect.RestoreState(data.shield);
+        if (_weaponEffect != null) _weaponEffect.RestoreState(data.weapon, enemies);
+    }
+
+    public void RestoreHealth(int hp)
+    {
+        _hp = Mathf.Clamp(hp, 0, _maxHp);
+        _hpSlider.value = _maxHp > 0 ? (float)_hp / _maxHp : 0f;
+        _animator.SetBool("isDead", _hp == 0);
+    }
+
     private void Start()
     {
         _hp = _maxHp;

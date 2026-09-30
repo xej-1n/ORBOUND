@@ -59,20 +59,39 @@ public class StageManager : MonoBehaviour
             if (enemies[i] != null)
                 enemies[i]._enemyData = enemyData;
         }
-        SaveCurrentStage();
-
         StartCoroutine(RunPlayTrun());
     }
-    private void SaveCurrentStage()
+    private int CurrentStageIndex => Array.IndexOf(stageData, currentStage);
+
+    private void SaveBattle(int turn, int nextEnemyIndex)
     {
-        for (int i = 0; i < stageData.Length; i++)
+        BattleSaveData data = new BattleSaveData
         {
-            if (stageData[i] == currentStage)
-            {
-                GameSaveManager.Instance.SetStage(i);
-                break;
-            }
+            turn = turn,
+            nextEnemyIndex = nextEnemyIndex,
+            score = ScoreManager.instance.totalScore
+        };
+        player.CaptureState(data, enemies);
+        foreach (Enemy enemy in enemies)
+            data.enemies.Add(enemy != null ? enemy.CaptureState() : new EnemySaveData());
+        GameSaveManager.Instance.SaveBattle(CurrentStageIndex, data);
+    }
+
+    private bool FinishBattleIfNeeded()
+    {
+        if (player._hp <= 0)
+        {
+            OnBattleEnd?.Invoke();
+            Gameover();
+            return true;
         }
+
+        foreach (Enemy enemy in enemies)
+            if (enemy != null && enemy._hp > 0) return false;
+
+        OnBattleEnd?.Invoke();
+        Clear();
+        return true;
     }
     public Enemy[] GetEnemies()
     {
@@ -81,76 +100,85 @@ public class StageManager : MonoBehaviour
 
     public IEnumerator RunPlayTrun()
     {
-        yield return new WaitForSeconds(1f);
-
+        // Restore after Player.Start and Enemy.Start initialize HP and equipment.
+        yield return null;
         int turn = 0;
+        int nextEnemyIndex = -1;
+        bool resumeShot = false;
+        BattleSaveData saved = GameSaveManager.Instance.GetBattle(CurrentStageIndex);
+        if (saved != null && saved.enemies != null && saved.enemies.Count == enemies.Length)
+        {
+            for (int i = 0; i < enemies.Length; i++)
+                if (enemies[i] != null && saved.enemies[i] != null)
+                    enemies[i].RestoreState(saved.enemies[i]);
+            player.RestoreState(saved, enemies);
+            turn = Mathf.Max(1, saved.turn);
+            nextEnemyIndex = Mathf.Clamp(saved.nextEnemyIndex, -1, enemies.Length);
+            ScoreManager.instance.totalScore = saved.score;
+            resumeShot = nextEnemyIndex == -1;
+        }
+        else if (GameSaveManager.Instance.SavedPlayerHp.HasValue)
+        {
+            player.RestoreHealth(GameSaveManager.Instance.SavedPlayerHp.Value);
+        }
+
+        if (FinishBattleIfNeeded()) yield break;
+        yield return new WaitForSeconds(1f);
 
         while (true)
         {
-            turn++;
-            OnTurnStart?.Invoke(turn);
-
-            MessageManager.instance.Open("플레이어의 턴", 3f);
-            ScoreManager.instance.Ready();
-            while (ScoreManager.instance.isPlaying)
+            if (nextEnemyIndex == -1)
             {
-                yield return new WaitForEndOfFrame();
-            }
-
-            MessageManager.instance.Open("플레이어의 공격", 1f);
-            yield return new WaitForSeconds(1f);
-            int damage = ScoreManager.instance.Damage;
-
-            for (int i = 0; i < enemies.Length; i++)
-            {
-                if (enemies[i] != null && enemies[i]._hp > 0)
+                // Do not apply regeneration twice when resuming a saved shot.
+                if (!resumeShot)
                 {
-                    player.Attack(enemies[i], damage);
-                    break;
+                    turn++;
+                    OnTurnStart?.Invoke(turn);
                 }
-            }
+                resumeShot = false;
+                SaveBattle(turn, -1);
+                MessageManager.instance.Open("플레이어의 턴", 3f);
+                ScoreManager.instance.Ready();
+                while (ScoreManager.instance.isPlaying)
+                    yield return new WaitForEndOfFrame();
 
-            bool enemyAllDead = true;
-
-            for (int i = 0; i < enemies.Length; i++)
-            {
-                if (enemies[i] != null && enemies[i]._hp > 0)
+                MessageManager.instance.Open("플레이어의 공격", 1f);
+                yield return new WaitForSeconds(1f);
+                int damage = ScoreManager.instance.Damage;
+                foreach (Enemy enemy in enemies)
                 {
-                    enemyAllDead = false;
-                    break;
+                    if (enemy != null && enemy._hp > 0)
+                    {
+                        player.Attack(enemy, damage);
+                        break;
+                    }
                 }
+
+                if (FinishBattleIfNeeded()) yield break;
+                nextEnemyIndex = 0;
+                SaveBattle(turn, nextEnemyIndex);
+                yield return new WaitForSeconds(3f);
             }
 
-            if (enemyAllDead)
-            {
-                OnBattleEnd?.Invoke();
-                Clear();
-                break;
-            }
-
-            yield return new WaitForSeconds(3f);
-
-            for (int i = 0; i < enemies.Length; i++)
+            for (int i = nextEnemyIndex; i < enemies.Length; i++)
             {
                 if (enemies[i] != null && enemies[i]._hp > 0)
-                {
                     yield return enemies[i].Turn(player);
-                }
+
+                if (FinishBattleIfNeeded()) yield break;
+                SaveBattle(turn, i + 1);
             }
 
             OnTurnEnd?.Invoke();
-
-            if (player._hp <= 0)
-            {
-                OnBattleEnd?.Invoke();
-                Gameover();
-                break;
-            }
+            if (FinishBattleIfNeeded()) yield break;
+            nextEnemyIndex = -1;
         }
     }
 
     private void Clear()
     {
+        // Keep HP changes from the finishing attack when moving to the next stage.
+        SaveBattle(0, -1);
         int currentLv = 0;
 
         for (int i = 0; i < stageData.Length; i++)
@@ -182,7 +210,6 @@ public class StageManager : MonoBehaviour
         }
         else
         {
-            GameSaveManager.Instance.SetStage(nextLv);
             LoadStage(stageData[nextLv]);
         }
     }

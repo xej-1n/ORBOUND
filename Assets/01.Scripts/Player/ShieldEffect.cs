@@ -15,6 +15,27 @@ public class ShieldEffect : MonoBehaviour
 
     public int Durability => durability;
 
+    public ShieldSaveData CaptureState()
+    {
+        return new ShieldSaveData
+        {
+            itemName = currentShield != null ? currentShield.name : "",
+            durability = durability, barrierCount = barrierCount,
+            emergencyUsed = emergencyUsed, chargeReady = chargeReady
+        };
+    }
+
+    public void RestoreState(ShieldSaveData data)
+    {
+        if (data == null || currentShield == null || data.itemName != currentShield.name) return;
+        durability = Mathf.Clamp(data.durability, 0, currentShield.Durability);
+        barrierCount = Mathf.Max(0, data.barrierCount);
+        emergencyUsed = data.emergencyUsed;
+        chargeReady = data.chargeReady;
+        barrierBlockingAction = false;
+        directDamageTotal = 0;
+    }
+
     public void SetShield(ShieldData shield)
     {
         currentShield = shield;
