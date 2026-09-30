@@ -116,7 +116,12 @@ public class Enemy : MonoBehaviour
         int actualDamage = Mathf.Min(Mathf.Max(0, damage), _hp);
 
         if (actualDamage <= 0)
+        {
+            DamageText missText = Instantiate(_damageTextPrefab, transform.position + new Vector3(0, _enemyData.height, 0), Quaternion.identity, transform);
+            missText.damageText.color = Color.yellow;
+            missText.damageText.text = "miss";
             return 0;
+        }
 
         _hp -= actualDamage;
 

@@ -133,7 +133,7 @@ public class Player : MonoBehaviour
         {
             DamageText blockText = Instantiate(_damageTextPrefab, _damageTextSpawnPoint);
             blockText.damageText.color = Color.blue;
-            blockText.damageText.text = "BLOCK";
+            blockText.damageText.text = "block";
             return;
         }
 
