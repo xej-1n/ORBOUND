@@ -176,6 +176,7 @@ MonoBehaviour:
   _enemyData: {fileID: 0}
   _hp: 0
   _hpSlider: {fileID: 3180153233493493914}
+  _damageTextPrefab: {fileID: 5238987891134363595, guid: 898ef1bd425421c4c81eef73ae9a59f3, type: 3}
 --- !u!1 &4404618322772608984
 GameObject:
   m_ObjectHideFlags: 0

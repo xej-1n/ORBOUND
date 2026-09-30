@@ -24,6 +24,8 @@ public class EnemyData : ScriptableObject
     public AudioClip _attackSound;
     public AudioClip _deadSound;
 
+    public float height = 1.0f;
+
     [Header("Boss")]
     public bool IsBoss;
     public BossType BossType;

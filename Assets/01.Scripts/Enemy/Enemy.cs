@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     public int _hp = 0;
     public Slider _hpSlider;
     private bool _rewardGiven;
+    public DamageText _damageTextPrefab;
 
     public int _getAttack
     {
@@ -118,6 +119,10 @@ public class Enemy : MonoBehaviour
             return 0;
 
         _hp -= actualDamage;
+
+        DamageText damageText = Instantiate(_damageTextPrefab, transform.position + new Vector3(0, _enemyData.height, 0), Quaternion.identity, transform);
+        damageText.damageText.color = Color.red;
+        damageText.damageText.text = actualDamage.ToString();
 
         _spriteRenderer.DOKill();
         _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);

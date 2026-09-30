@@ -20,6 +20,9 @@ public class Player : MonoBehaviour
     public AudioClip _attackSound;
     public AudioClip _deadSound;
 
+    public Transform _damageTextSpawnPoint;
+    public DamageText _damageTextPrefab;
+
     private void Start()
     {
         _hp = _maxHp;
@@ -127,10 +130,19 @@ public class Player : MonoBehaviour
             damage = _shieldEffect.Apply(this, attacker, enemyAtk);
 
         if (damage <= 0)
+        {
+            DamageText blockText = Instantiate(_damageTextPrefab, _damageTextSpawnPoint);
+            blockText.damageText.color = Color.blue;
+            blockText.damageText.text = "BLOCK";
             return;
+        }
 
         _hp -= damage;
         _hp = Mathf.Max(0, _hp);
+
+        DamageText damageText = Instantiate(_damageTextPrefab, _damageTextSpawnPoint);
+        damageText.damageText.color = Color.red;
+        damageText.damageText.text = damage.ToString();
 
         _spriteRenderer.DOKill();
         _spriteRenderer.DOColor(Color.red, 0.1f).SetLoops(2, LoopType.Yoyo);
