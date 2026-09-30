@@ -204,7 +204,7 @@ public class StageManager : MonoBehaviour
             }
 
             string nextSceneName = System.IO.Path.GetFileNameWithoutExtension(nextScenePath);
-            GameSaveManager.Instance.SetStage(0, nextSceneName);
+            GameSaveManager.Instance.SetStage(0, nextSceneName, resetPlayerHealth: true);
 
             SceneManager.LoadScene(nextSceneIndex);
         }

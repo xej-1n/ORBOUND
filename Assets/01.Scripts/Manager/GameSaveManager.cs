@@ -110,11 +110,14 @@ public class GameSaveManager : MonoBehaviour
         Debug.Log("게임 불러오기 완료");
     }
 
-    public void SetStage(int stageIndex, string sceneName = null)
+    public void SetStage(int stageIndex, string sceneName = null, bool resetPlayerHealth = false)
     {
         string targetScene = sceneName ?? SceneManager.GetActiveScene().name;
-        if (currentStageIndex != stageIndex || currentSceneName != targetScene)
+        if (resetPlayerHealth || currentStageIndex != stageIndex || currentSceneName != targetScene)
             currentBattle = null;
+        // Let the destination player's Start initialize its own maximum HP.
+        if (resetPlayerHealth)
+            SavedPlayerHp = null;
         currentStageIndex = stageIndex;
         currentSceneName = targetScene;
         Save();
